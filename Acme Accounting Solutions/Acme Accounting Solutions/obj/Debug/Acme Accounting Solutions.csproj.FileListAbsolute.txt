@@ -1,0 +1,7 @@
+C:\Users\Owner\Desktop\Basic_C#_Programs\Acme Accounting Solutions\Acme Accounting Solutions\bin\Debug\Acme Accounting Solutions.exe.config
+C:\Users\Owner\Desktop\Basic_C#_Programs\Acme Accounting Solutions\Acme Accounting Solutions\bin\Debug\Acme Accounting Solutions.exe
+C:\Users\Owner\Desktop\Basic_C#_Programs\Acme Accounting Solutions\Acme Accounting Solutions\bin\Debug\Acme Accounting Solutions.pdb
+C:\Users\Owner\Desktop\Basic_C#_Programs\Acme Accounting Solutions\Acme Accounting Solutions\obj\Debug\Acme Accounting Solutions.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\Basic_C#_Programs\Acme Accounting Solutions\Acme Accounting Solutions\obj\Debug\Acme Accounting Solutions.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\Basic_C#_Programs\Acme Accounting Solutions\Acme Accounting Solutions\obj\Debug\Acme Accounting Solutions.exe
+C:\Users\Owner\Desktop\Basic_C#_Programs\Acme Accounting Solutions\Acme Accounting Solutions\obj\Debug\Acme Accounting Solutions.pdb
