@@ -25,6 +25,9 @@ namespace DailyReportAssignment
             string pageNumber = Console.ReadLine();
             int pNumber = Convert.ToInt32(pageNumber);
             Console.ReadLine();
+
+            Console.WriteLine("Do you need help with anything? Please answer \"true\" or \"false\".");
+            string needHelp = Console.ReadLine();
             
 
         }
