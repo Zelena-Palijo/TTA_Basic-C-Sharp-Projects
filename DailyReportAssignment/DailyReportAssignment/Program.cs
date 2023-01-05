@@ -28,6 +28,23 @@ namespace DailyReportAssignment
 
             Console.WriteLine("Do you need help with anything? Please answer \"true\" or \"false\".");
             string needHelp = Console.ReadLine();
+
+            Console.WriteLine("Were there any positive experiences you'd like to share? Please give specifics.");
+            string posExp = Console.ReadLine();
+
+            Console.WriteLine("Is there any other feedback you'd like to provide? Please be specific.");
+            string feedback = Console.ReadLine();
+
+            Console.WriteLine("How many hours did you study?");
+            string studyTime = Console.ReadLine();
+            int sTime = Convert.ToInt32(studyTime);
+            Console.ReadLine();
+
+            string str2 = "Thank you for your ansers. An Instructor will respond to this shortly. \n" +
+                "Have a great day!";
+            Console.WriteLine(str2);
+            Console.ReadLine();
+
             
 
         }
