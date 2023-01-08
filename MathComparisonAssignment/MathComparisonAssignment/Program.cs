@@ -29,8 +29,10 @@ namespace MathComparisonAssignment
             int wHour = Convert.ToInt32(weeklyHour);
             //convert to int to do math
 
-
-
+            int product = hRate * wHour;
+            Console.WriteLine(product);
+            Console.ReadLine();
+            //multiple to get weekly rate
 
 
         }
