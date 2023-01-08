@@ -52,6 +52,10 @@ namespace MathComparisonAssignment
             //multiple to get weekly rate
 
             Console.WriteLine("Does Person 1 make more money than Person 2?");
+            bool trueOrFalse = product > product2;
+            Console.Write(trueOrFalse.ToString());
+            Console.ReadLine();
+            //compare who makes more using boolean
 
         }
     }
