@@ -19,10 +19,16 @@ namespace MathComparisonAssignment
 
             Console.WriteLine("Person 1");
 
-            string str1 = "What is your hourly rate?";
-            Console.WriteLine(str1);
+            Console.WriteLine("What is your hourly rate?");
             string hourlyRate = Console.ReadLine();
-            int hourlyRate = Convert.ToInt32(hourlyRate);
+            int hRate = Convert.ToInt32(hourlyRate);
+
+            //Re-use previous str1 for format
+            Console.WriteLine("How many hours do you work per week?");
+            string weeklyHour = Console.ReadLine();
+            int wHour = Convert.ToInt32(weeklyHour);
+            //convert to int to do math
+
 
 
 
