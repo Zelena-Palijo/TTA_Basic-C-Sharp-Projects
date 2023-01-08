@@ -1,0 +1,7 @@
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\MathComparisonAssignment\MathComparisonAssignment\obj\Debug\MathComparisonAssignment.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\MathComparisonAssignment\MathComparisonAssignment\obj\Debug\MathComparisonAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\MathComparisonAssignment\MathComparisonAssignment\bin\Debug\MathComparisonAssignment.exe.config
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\MathComparisonAssignment\MathComparisonAssignment\bin\Debug\MathComparisonAssignment.exe
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\MathComparisonAssignment\MathComparisonAssignment\bin\Debug\MathComparisonAssignment.pdb
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\MathComparisonAssignment\MathComparisonAssignment\obj\Debug\MathComparisonAssignment.exe
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\MathComparisonAssignment\MathComparisonAssignment\obj\Debug\MathComparisonAssignment.pdb
