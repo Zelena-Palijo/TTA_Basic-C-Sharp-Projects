@@ -17,9 +17,11 @@ namespace CarInsuranceAssignment
             int ageNum = Convert.ToInt32(age);
             //ask for age, convert to int for value comparison
 
-            Console.WriteLine("True or False: Have you ever had a DUI?");
-            safeDriver = Console.ReadLine();
-            // needs to be t/f for bool later, so only give t/f as option
+
+            string str1 = "True or False: Have you ever had a DUI?";
+            Console.WriteLine(str1);
+            bool safe = Convert.ToBoolean(str1);
+            // convert to boolean
 
             Console.WriteLine("How many speeding tickets do you have?");
             string ticket = Console.ReadLine();
@@ -31,34 +33,37 @@ namespace CarInsuranceAssignment
             //no DUI
             //no more than 3 tickets
 
+            // true if old enough, false if not
             bool oldEnough;
             if (ageNum > 15)
             {
                 oldEnough = true;
                 //Console.WriteLine(oldEnough);
-                //Console.ReadLine();
+                //Console.ReadLine();  // works? yes
             }
             else
             {
                 oldEnough = false;
                 //Console.WriteLine(oldEnough);
-                //Console.ReadLine();
+                //Console.ReadLine(); // works? yes
             }
 
+            // if 3 or fewer tickets, then true. more than 3, false
             bool noSpeed;
             if (ticketNum <= 3)
             {
                 noSpeed = true;
-                Console.WriteLine(noSpeed);
-                Console.ReadLine();
+                //Console.WriteLine(noSpeed);
+                //Console.ReadLine(); // works? yes
             }
             else
             {
                 noSpeed = false;
-                Console.WriteLine(noSpeed);
-                Console.ReadLine();
+                //Console.WriteLine(noSpeed);
+                //Console.ReadLine(); // works? yes
             }
 
+            //if (oldEnough && )
 
 
 
