@@ -29,9 +29,7 @@ namespace CarInsuranceAssignment
             // convert to int for value comparison
 
             //Check qualifications -big if/else statement here?
-            //must be > 15
-            //no DUI
-            //no more than 3 tickets
+          
 
             // true if old enough, false if not
             bool oldEnough;
@@ -48,7 +46,16 @@ namespace CarInsuranceAssignment
                 //Console.ReadLine(); // works? yes
             }
 
-            //convert DUI string to boolean
+            //convert DUI, switch true DUI = false
+            bool notSafe;
+            if (safe == true)
+            {
+                notSafe = false;
+            }
+            else
+            {
+                notSafe = true;
+            }
         
 
             // if 3 or fewer tickets, then true. more than 3, false
@@ -66,7 +73,7 @@ namespace CarInsuranceAssignment
                 //Console.ReadLine(); // works? yes
             }
 
-            if (oldEnough && safe && noSpeed)
+            if (oldEnough && notSafe && noSpeed)
             {
                 //if all true then print yes
                 Console.WriteLine("You meet all the requirements.");
