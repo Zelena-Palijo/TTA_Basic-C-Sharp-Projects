@@ -28,6 +28,13 @@ namespace PackageExpress
 
             Console.WriteLine("Please enter the package length:");
             int length = Convert.ToInt32(Console.ReadLine());
+
+            int totalDimensions = width + height + length; // add above
+            //Console.WriteLine(totalDimensions);
+            //Console.ReadLine();
+            string resultTotal = totalDimensions >= 50 ? "Package too big to be shiped via Package Express." : " ";
+            Console.WriteLine(resultTotal);
+            Console.ReadLine();
         }
     }
 }
