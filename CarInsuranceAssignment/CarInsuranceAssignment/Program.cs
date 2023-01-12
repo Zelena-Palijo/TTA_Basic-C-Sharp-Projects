@@ -32,46 +32,33 @@ namespace CarInsuranceAssignment
           
 
             // true if old enough, false if not
-            bool oldEnough;
+            bool oldEnough = false;
             if (ageNum > 15)
             {
                 oldEnough = true;
                 //Console.WriteLine(oldEnough);
                 //Console.ReadLine();  // works? yes
             }
-            else
-            {
-                oldEnough = false;
-                //Console.WriteLine(oldEnough);
-                //Console.ReadLine(); // works? yes
-            }
+            
 
             //convert DUI, switch true DUI = false
-            bool notSafe;
+            bool notSafe = false;
             if (safe == true)
             {
                 notSafe = false;
             }
-            else
-            {
-                notSafe = true;
-            }
+           
         
 
             // if 3 or fewer tickets, then true. more than 3, false
-            bool noSpeed;
+            bool noSpeed = true;
             if (ticketNum <= 3)
             {
                 noSpeed = true;
                 //Console.WriteLine(noSpeed);
                 //Console.ReadLine(); // works? yes
             }
-            else
-            {
-                noSpeed = false;
-                //Console.WriteLine(noSpeed);
-                //Console.ReadLine(); // works? yes
-            }
+            
 
             if (oldEnough && notSafe && noSpeed)
             {
