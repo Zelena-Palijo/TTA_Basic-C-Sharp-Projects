@@ -42,10 +42,10 @@ namespace CarInsuranceAssignment
             
 
             //convert DUI, switch true DUI = false
-            bool notSafe = false;
-            if (safe == true)
+            bool notSafe = true;
+            if (safe == false)
             {
-                notSafe = false;
+                notSafe = true;
             }
            
         
