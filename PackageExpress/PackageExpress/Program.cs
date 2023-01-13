@@ -38,9 +38,15 @@ namespace PackageExpress
             int totalDimensions = width + height + length; // add above
             //Console.WriteLine(totalDimensions);
             //Console.ReadLine();
-            string resultTotal = totalDimensions >= 50 ? "Package too big to be shiped via Package Express." : " ";
-            Console.WriteLine(resultTotal);
+            //string resultTotal = totalDimensions >= 50 ? "Package too big to be shiped via Package Express." : " ";
+            //Console.WriteLine(resultTotal);
             //Console.ReadLine();
+            if (totalDimensions > 50)
+            {
+                Console.WriteLine("Package too big to be shiped via Package Express.");
+                Console.ReadLine();
+                System.Environment.Exit(0);
+            }
 
             int packageV = (width*height*length) * weight; 
             int quote = packageV / 100;
