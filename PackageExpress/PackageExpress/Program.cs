@@ -15,10 +15,16 @@ namespace PackageExpress
 
             Console.WriteLine("Please enter the package weight:");
             int weight = Convert.ToInt32(Console.ReadLine()); //covert to int to compare
-            string result = weight >= 50 ? "Package too big to be shiped via Package Express." : " ";
+            //string result = weight >= 50 ? "Package too big to be shiped via Package Express.": " ";
             //if too large, then prompt. if not too large, move on
-            Console.WriteLine(result);
+            //Console.WriteLine(result);
             //Console.ReadLine();
+            if (weight >= 50)
+            {
+                Console.WriteLine("Package too big to be shiped via Package Express.");
+                Console.ReadLine();
+                System.Environment.Exit(0);
+            }
 
             Console.WriteLine("Please enter the package width:");
             int width = Convert.ToInt32(Console.ReadLine());
