@@ -10,14 +10,16 @@ namespace LoopsSwitch
     {
         static void Main()
         {
-            int i = 0;
-            while (i<10) 
-            {
-                Console.WriteLine("Times this has happened: "+ i); 
-                Console.ReadLine(); // if not here, then end program too fast?
-                i++; // add 1 each time
+            //int i = 0;
+            //while (i<10) 
+            //{
+            //    Console.WriteLine("Times this has happened: "+ i); 
+            //    Console.ReadLine(); // if not here, then end program too fast?
+            //    i++; // add 1 each time
 
-            }
+            //}
+            //Console.WriteLine("Thank you!");
+            //Console.ReadLine();
 
             Console.WriteLine("How old are you?");
             int age = Convert.ToInt32(Console.ReadLine()); // convert age to integer
@@ -25,11 +27,12 @@ namespace LoopsSwitch
 
             do
             {
-                Console.WriteLine("cool!"); // respond if not 29 otherwise end
+                Console.WriteLine("You are not 29."); // respond if not 29 otherwise end
                 Console.ReadLine();
             }
             while (!howOld);
-            Console.ReadLine();
+
+            Console.Read();
             System.Environment.Exit(0);
         }
     }
