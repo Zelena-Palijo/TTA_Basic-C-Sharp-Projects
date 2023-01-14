@@ -19,17 +19,18 @@ namespace LoopsSwitch
 
             }
 
-            Console.WriteLine("how old are you?");
-            int age = Convert.ToInt32(Console.ReadLine());
-            bool howold = age == 29;
+            Console.WriteLine("How old are you?");
+            int age = Convert.ToInt32(Console.ReadLine()); // convert age to integer
+            bool howOld = age == 29; //true only if equals to 29
 
             do
             {
-                Console.WriteLine("cool!");
+                Console.WriteLine("cool!"); // respond if not 29 otherwise end
                 Console.ReadLine();
             }
-            while (age > 29);
-            Console.Read();
+            while (!howOld);
+            Console.ReadLine();
+            System.Environment.Exit(0);
         }
     }
 }
