@@ -10,13 +10,22 @@ namespace LoopsSwitch
     {
         static void Main()
         {
-            Console.WriteLine("How old are you?");
+            int i = 0;
+            while (i<10) 
+            {
+                Console.WriteLine("Times this has happened: "+ i); 
+                Console.ReadLine(); // if not here, then end program too fast?
+                i++; // add 1 each time
+
+            }
+
+            Console.WriteLine("how old are you?");
             int age = Convert.ToInt32(Console.ReadLine());
-            bool howOld = age == 29;
+            bool howold = age == 29;
 
             do
             {
-                Console.WriteLine("Cool!");
+                Console.WriteLine("cool!");
                 Console.ReadLine();
             }
             while (age > 29);
