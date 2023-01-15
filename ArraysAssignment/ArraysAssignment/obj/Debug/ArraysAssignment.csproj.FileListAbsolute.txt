@@ -1,0 +1,7 @@
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ArraysAssignment\ArraysAssignment\bin\Debug\ArraysAssignment.exe.config
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ArraysAssignment\ArraysAssignment\bin\Debug\ArraysAssignment.exe
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ArraysAssignment\ArraysAssignment\bin\Debug\ArraysAssignment.pdb
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ArraysAssignment\ArraysAssignment\obj\Debug\ArraysAssignment.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ArraysAssignment\ArraysAssignment\obj\Debug\ArraysAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ArraysAssignment\ArraysAssignment\obj\Debug\ArraysAssignment.exe
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ArraysAssignment\ArraysAssignment\obj\Debug\ArraysAssignment.pdb
