@@ -49,7 +49,7 @@ class Program
             Console.WriteLine("Please select a number between 0 to 3 to choose your element.");
             int element = Convert.ToInt32(Console.ReadLine());
 
-            if (choice <= 3)
+            if (element <= 3)
             {
                 Console.WriteLine("Your element is:" + stringList[element]);
                 Console.ReadLine();
