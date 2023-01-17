@@ -7,6 +7,8 @@ namespace ConsoleAppAssignment
     {
         static void Main(string[] args)
         {
+            // PART 1
+
             //string[] colorArray = { "brown", "black", "white", "cerulean" }; // array of strings
             //List<string> colors = new List<string>(colorArray); //convert to list to add items
             List<string> colors = new List<string>() { "brown", "black", "white", "cerulean" }; 
@@ -30,6 +32,7 @@ namespace ConsoleAppAssignment
             Console.ReadLine();
 
 
+            // PART 2 
             //creating infinite loop
 
             int count = 0; //add condition to break infinite loop
@@ -44,11 +47,28 @@ namespace ConsoleAppAssignment
 
             }
             Console.WriteLine("Good-bye.");
-            Console.ReadLine(); 
-            
+            Console.ReadLine();
 
-            
-            
+
+            // PART 3
+            int numCount = 0; 
+            while (true) // infinite loop conditions from before
+            {
+                Console.WriteLine("Keep it moving"); 
+
+                if (numCount++ < 10) // comparison is <
+                {
+                    break; //stop loop at 10
+                }
+
+            }
+            Console.WriteLine("OK, that's good.");
+            Console.ReadLine();
+
+
+
+
+
 
 
         }
