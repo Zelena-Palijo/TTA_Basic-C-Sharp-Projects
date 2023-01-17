@@ -69,18 +69,28 @@ class Program
             Console.WriteLine("Please select a number between 0 to 3 to choose your element.");
             int element = Convert.ToInt32(Console.ReadLine());
 
-            if (element <= 3)
-            {
-                Console.WriteLine("Your element is:" + stringList[element]);
-                Console.ReadLine();
-
-            }
-            else // default if chooses something other than 0-3
+            while (element > 3)
             {
                 Console.WriteLine("Sorry, your request cannot be completed. \n " +
                 "Please choose a number between 0 to 3.");
-                Console.ReadLine();
+                element = Convert.ToInt32(Console.ReadLine());
+
             }
+            Console.WriteLine(stringList[element]);
+            Console.ReadLine();
+
+            //if (element <= 3)
+            //{
+            //    Console.WriteLine("Your element is:" + stringList[element]);
+            //    Console.ReadLine();
+
+            //}
+            //else // default if chooses something other than 0-3
+            //{
+            //    Console.WriteLine("Sorry, your request cannot be completed. \n " +
+            //    "Please choose a number between 0 to 3.");
+            //    Console.ReadLine();
+            //}
 
     }
 }
