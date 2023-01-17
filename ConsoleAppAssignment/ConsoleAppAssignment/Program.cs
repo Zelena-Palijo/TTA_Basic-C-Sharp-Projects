@@ -22,7 +22,7 @@ namespace ConsoleAppAssignment
             }
 
             //second loop
-            Console.WriteLine("Here are some other people's favorite colors:");
+            Console.WriteLine("\n Here are some other people's favorite colors: ");
             foreach (string color in colors)
             {
                 Console.WriteLine(color);
@@ -43,6 +43,8 @@ namespace ConsoleAppAssignment
                 }
 
             }
+            Console.WriteLine("Good-bye.");
+            Console.ReadLine(); 
             
 
             
