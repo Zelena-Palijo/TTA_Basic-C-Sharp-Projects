@@ -40,18 +40,28 @@ class Program
             Console.WriteLine("Please select a number between 0 to 4 to see an item from the list.");
             int numChoice = Convert.ToInt32(Console.ReadLine());
 
-            if (numChoice <= 4)
-            {
-                Console.WriteLine(numArray[numChoice]);
-                Console.ReadLine();
-
-            }
-            else // default if chooses something other than 0-4
+            while (numChoice > 4)
             {
                 Console.WriteLine("Sorry, your request cannot be completed. \n " +
-                "Please choose a number between 0 to 4.");
-                Console.ReadLine();
+                   "Please choose a number between 0 to 4.");
+                numChoice = Convert.ToInt32(Console.ReadLine());
+
             }
+            Console.WriteLine(numArray[numChoice]);
+            Console.ReadLine();
+
+            //if (numChoice <= 4)
+            //{
+            //    Console.WriteLine(numArray[numChoice]);
+            //    Console.ReadLine();
+
+            //}
+            //else // default if chooses something other than 0-4
+            //{
+            //    Console.WriteLine("Sorry, your request cannot be completed. \n " +
+            //    "Please choose a number between 0 to 4.");
+            //    Console.ReadLine();
+            //}
 
 
             // list of strings
