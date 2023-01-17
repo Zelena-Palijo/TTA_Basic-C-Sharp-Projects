@@ -11,7 +11,7 @@ namespace ConsoleAppAssignment
 
             //string[] colorArray = { "brown", "black", "white", "cerulean" }; // array of strings
             //List<string> colors = new List<string>(colorArray); //convert to list to add items
-            List<string> colors = new List<string>() { "brown", "black", "white", "cerulean" }; 
+            List<string> colors = new List<string>() { "brown", "black", "white", "cerulean" };
             //made it a list, but can make it an array also
 
             Console.WriteLine("What's your favourite color?"); // prompt to input text
@@ -51,10 +51,10 @@ namespace ConsoleAppAssignment
 
 
             // PART 3
-            int numCount = 0; 
+            int numCount = 0;
             while (true) // infinite loop conditions from before
             {
-                Console.WriteLine("Keep it moving"); 
+                Console.WriteLine("Keep it moving");
 
                 if (numCount++ < 10) // comparison is <
                 {
@@ -63,6 +63,20 @@ namespace ConsoleAppAssignment
 
             }
             Console.WriteLine("OK, that's good.");
+            Console.ReadLine();
+
+            int number = 100;
+            while (true) // infinite loop conditions from before
+            {
+                Console.WriteLine("blah");
+
+                if (number-- <= 20) // comparison is <=
+                {
+                    break; //stop loop at 20
+                }
+
+            }
+            Console.WriteLine("OK.");
             Console.ReadLine();
 
 
