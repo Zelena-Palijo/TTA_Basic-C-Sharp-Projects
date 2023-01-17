@@ -28,6 +28,13 @@ namespace ConsoleAppAssignment
                 Console.WriteLine(color);
             }
             Console.ReadLine();
+
+
+            //creating infinite loop
+            while (true)
+            {
+                Console.WriteLine("Wake up!");
+            }
             
 
             
