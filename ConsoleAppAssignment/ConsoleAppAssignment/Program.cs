@@ -31,9 +31,17 @@ namespace ConsoleAppAssignment
 
 
             //creating infinite loop
+
+            int count = 0; //add condition to break infinite loop
             while (true)
             {
-                Console.WriteLine("Wake up!");
+                Console.WriteLine("Wake up!"); //infinitely creates loop
+
+                if (count++ >= 40) //limiting loop to 40, so once 40 times, then will stop
+                {
+                    break;
+                }
+
             }
             
 
