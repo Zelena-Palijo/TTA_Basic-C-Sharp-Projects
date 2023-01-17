@@ -10,18 +10,28 @@ class Program
             Console.WriteLine("Please select a number between 0 to 4 to see an item from the list.");
             int choice = Convert.ToInt32(Console.ReadLine());
 
-            if (choice <= 4) //wanted to use while loop or do while loop but wouldn't work?
-            {
-                Console.WriteLine(shoppingList[choice]);
-                Console.ReadLine();
-
-            }
-            else // default if chooses something other than 0-4
+            while (choice > 4)
             {
                 Console.WriteLine("Sorry, your request cannot be completed. \n " +
-                "Please choose a number between 0 to 4.");
-                Console.ReadLine();
+                   "Please choose a number between 0 to 4.");
+                choice = Convert.ToInt32(Console.ReadLine());
+
             }
+            Console.WriteLine(shoppingList[choice]);
+            Console.ReadLine();
+
+            //if (choice <= 4) //wanted to use while loop or do while loop but wouldn't work?
+            //{
+            //    Console.WriteLine(shoppingList[choice]);
+            //    Console.ReadLine();
+
+            //}
+            //else // default if chooses something other than 0-4
+            //{
+            //    Console.WriteLine("Sorry, your request cannot be completed. \n " +
+            //    "Please choose a number between 0 to 4.");
+            //    Console.ReadLine();
+            //}
 
 
 
