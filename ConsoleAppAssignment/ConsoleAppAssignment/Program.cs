@@ -118,21 +118,34 @@ namespace ConsoleAppAssignment
             Console.WriteLine("What chore will you start with today: dishes, laundry, vacuum, windows.");
             string task = Console.ReadLine();
 
-            foreach (string chore in chores)
+            if (chores.Contains(task))
             {
-                if (chores.Contains(task))
+                foreach (string chore in chores)
                 {
                     Console.WriteLine(chores.IndexOf(task));
                     Console.ReadLine();
-
                 }
-                else
-                {
-                    Console.WriteLine("Sorry, please choose a task on the list.");
-                    Console.ReadLine();
-                }
-                
             }
+            else
+            {
+                Console.WriteLine("Sorry, please choose a task on the list.");
+                Console.ReadLine();
+
+            }
+
+            //foreach (string chore in chores)
+            //{
+            //    while (chores.Contains(task))
+            //    {
+            //        Console.WriteLine(chores.IndexOf(task));
+            //        Console.ReadLine();
+
+            //    }
+            //    Console.WriteLine("Sorry, please choose a task on the list.");
+            //    Console.ReadLine();
+                  
+                
+            //}
 
 
 
