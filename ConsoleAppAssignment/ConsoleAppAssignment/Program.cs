@@ -100,6 +100,7 @@ namespace ConsoleAppAssignment
             //        Console.WriteLine("Sorry, that item is not on the menu. Please choose a menu item.");
             //        Console.ReadLine();
             //    }
+            //}
                 // tried alternate with while loop, but could not get it to work see below:
                 //while (!coffees.Contains(order)) //made it if not contains, then will keep saying
                 //    //until gives option on list
@@ -110,19 +111,28 @@ namespace ConsoleAppAssignment
                 //}
                 //Console.WriteLine(coffees.IndexOf(order)); // write index of item
                 //Console.ReadLine();
-             }
+            
 
-                // PART 5
-                List<string> chores = new List<string>() { "dishes", "laundry", "vacuum", "dishes", "windows" };
-                Console.WriteLine("What chore will you start with today?");
-                string choice = Console.ReadLine();
+            // PART 5
+            List<string> chores = new List<string>() { "dishes", "laundry", "vacuum", "dishes", "windows" };
+            Console.WriteLine("What chore will you start with today: dishes, laundry, vacuum, windows.");
+            string task = Console.ReadLine();
 
-                foreach (chore in chores)
+            foreach (string chore in chores)
+            {
+                if (chores.Contains(task))
                 {
-                Console.WriteLine(chores.IndexOf(choice));
-                Console.ReadLine();
+                    Console.WriteLine(chores.IndexOf(task));
+                    Console.ReadLine();
 
                 }
+                else
+                {
+                    Console.WriteLine("Sorry, please choose a task on the list.");
+                    Console.ReadLine();
+                }
+                
+            }
 
 
 
