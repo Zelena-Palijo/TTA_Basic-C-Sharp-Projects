@@ -81,25 +81,25 @@ namespace ConsoleAppAssignment
 
 
             // PART 4
-            List<string> coffees = new List<string>() { "latte", "americano", "iced", "regular" };
+            //List<string> coffees = new List<string>() { "latte", "americano", "iced", "regular" };
 
-            Console.WriteLine("Please choose one of the following: \n " +
-                "latte, americano, iced, regular");
-            string order = Console.ReadLine();
+            //Console.WriteLine("Please choose one of the following: \n " +
+            //    "latte, americano, iced, regular");
+            //string order = Console.ReadLine();
 
-            foreach (string coffee in coffees) // goes through each item in list 
-            {
-                
-                if (coffees.Contains(order)) // if the order on the list
-                {
-                    Console.WriteLine(coffees.IndexOf(order)); // write index of item
-                    Console.ReadLine();
-                }
-                else
-                {
-                    Console.WriteLine("Sorry, that item is not on the menu. Please choose a menu item.");
-                    Console.ReadLine();
-                }
+            //foreach (string coffee in coffees) // goes through each item in list 
+            //{
+
+            //    if (coffees.Contains(order)) // if the order on the list
+            //    {
+            //        Console.WriteLine(coffees.IndexOf(order)); // write index of item
+            //        Console.ReadLine();
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Sorry, that item is not on the menu. Please choose a menu item.");
+            //        Console.ReadLine();
+            //    }
                 // tried alternate with while loop, but could not get it to work see below:
                 //while (!coffees.Contains(order)) //made it if not contains, then will keep saying
                 //    //until gives option on list
@@ -110,9 +110,20 @@ namespace ConsoleAppAssignment
                 //}
                 //Console.WriteLine(coffees.IndexOf(order)); // write index of item
                 //Console.ReadLine();
+             }
 
+                // PART 5
+                List<string> chores = new List<string>() { "dishes", "laundry", "vacuum", "dishes", "windows" };
+                Console.WriteLine("What chore will you start with today?");
+                string choice = Console.ReadLine();
 
-            }
+                foreach (chore in chores)
+                {
+                Console.WriteLine(chores.IndexOf(choice));
+                Console.ReadLine();
+
+                }
+
 
 
 
