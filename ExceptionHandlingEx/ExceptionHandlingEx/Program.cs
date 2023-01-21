@@ -21,7 +21,26 @@ namespace ExceptionHandlingEx
                 Console.WriteLine(numberOne + " divided by " + numberTwo + " equals " + numberThree);
                 Console.ReadLine();
             }
+            catch (FormatException ex)
+            {
+                Console.WriteLine("Please type a whole number.");
+                return;
+            }
+            catch (DivideByZeroException ex)
+            {
+                Console.WriteLine("Please don't divide by zero");
+            }
+            // catch general exceptions
             catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            //make sure will always show the error message
+            finally
+            {
+               Console.ReadLine();
+            }
+            
             
         }
     }
