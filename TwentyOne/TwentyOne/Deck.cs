@@ -18,6 +18,7 @@ namespace TwentyOne
             //Cards.Add(cardOne);
 
             //easier way using nested for/each loop instead of writing it out
+            Cards = new List<Card>();
             //list of all possible suits
             List<string> Suits = new List<string>() { "Clubs", "Hearts", "Diamonds", "Spades" };
             List<string> Faces = new List<string>()
@@ -30,7 +31,10 @@ namespace TwentyOne
             {
                 foreach(string suit in Suits)
                 {
-
+                    Card card = new Card();
+                    card.Suit = suit;
+                    card.Face = face;
+                    Cards.Add(card);
                 }
             }
 
