@@ -17,12 +17,20 @@ namespace CallingMethodsAssignment
 
         }
 
-        //second method
+        //second method dives by 3
         public static int DivideBy3(int num1)
         {
             int div;
             div = num1 / 3;
             return div;
+        }
+
+        //third method
+        public static int Add59(int num1)
+        {
+            int add;
+            add = num1 + 59;
+            return add;
         }
     }
 
