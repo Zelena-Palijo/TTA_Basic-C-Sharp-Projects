@@ -12,23 +12,23 @@ namespace ConsoleAppAssignment
         {
             //// PART 1
 
-            string[] colors = new string[] { "brown", "black", "white", "cerulean" }; // array of strings
-            Console.WriteLine("What's your favourite color?"); // prompt to input text
-            colors = colors.Append(Console.ReadLine()).ToArray();
+            //string[] colors = new string[] { "brown", "black", "white", "cerulean" }; // array of strings
+            //Console.WriteLine("What's your favourite color?"); // prompt to input text
+            //colors = colors.Append(Console.ReadLine()).ToArray();
 
-            foreach (string color in colors) //loops through and adds the input to end of each string
-            {
-                Console.WriteLine(color);
-            }
+            //foreach (string color in colors) //loops through and adds the input to end of each string
+            //{
+            //    Console.WriteLine(color);
+            //}
 
-            //second loop
-            Console.WriteLine("\n Here are some other people's favorite colors: ");
-            foreach (string color in colors)
-            {
-                Console.WriteLine(color);
-                
-            }
-            Console.ReadLine();
+            ////second loop
+            //Console.WriteLine("\n Here are some other people's favorite colors: ");
+            //foreach (string color in colors)
+            //{
+            //    Console.WriteLine(color);
+
+            //}
+            //Console.ReadLine();
 
 
             //// PART 2 
@@ -129,35 +129,27 @@ namespace ConsoleAppAssignment
 
 
 
-            //// PART 6
-            //List<string> letters = new List<string>() { "a", "b", "c", "d", "d" };
-            //List<string> noDuplicate = new List<string>(); //no duplicates
-            //List<string> hasDuplicate = new List<string>(); // has duplicates
+            // PART 6
+            List<string> letters = new List<string>() { "a", "b", "c", "d", "d" };
+            List<string> noDuplicate = new List<string>(); //no duplicates
 
-            //foreach (string l in letters)
-            //{
-            //    if (!letters.Contains(l))
-            //    { // if the list does NOT contain the letter, add to noDuplicate
-            //        noDuplicate.Add(l);
-            //    }
-            //    else // if the list does contain the letter, then has to hasDuplicate
-            //    {
-            //        hasDuplicate.Add(l);
-            //    }
+            foreach (string l in letters) // going through list letters
+            {
+                if (!noDuplicate.Contains(l)) // if list 2 does NOT contain the letter,
+                {
+                    noDuplicate.Add(l); // add to the list of no duplicates
+                    Console.WriteLine(l + " is unique.");
+                    //Console.ReadLine();
+                }
+                else // if the list does contain the letter then 
+                {
+                    Console.WriteLine(l + " is not unique.");
+                    //Console.ReadLine();
+                }
+            }
+            Console.ReadLine();
 
-            //}
 
-            //foreach (string l in noDuplicate) //listing out the ones that are unique
-            //{
-            //    Console.WriteLine(l + "- is unique");
-            //    Console.ReadLine();
-            //}
-
-            //foreach (string l in hasDuplicate) //listing out the ones with duplicates
-            //{
-            //    Console.WriteLine(l + "- is not unique");
-            //    Console.ReadLine();
-            //}
 
 
 
