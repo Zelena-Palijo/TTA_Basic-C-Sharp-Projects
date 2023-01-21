@@ -81,63 +81,53 @@ namespace ConsoleAppAssignment
 
 
             // PART 4
-            List<string> coffees = new List<string>() { "latte", "americano", "iced", "regular" };
+            //List<string> coffees = new List<string>() { "latte", "americano", "iced", "regular" };
 
-            Console.WriteLine("Please choose one of the following: \n " +
-                "latte, americano, iced, regular");
-            string order = Console.ReadLine();
+            //Console.WriteLine("Please choose one of the following: \n " +
+            //    "latte, americano, iced, regular");
+            //string order = Console.ReadLine();
 
-            // goes through list to check if order is included
-            for (int i = 0; i < coffees.Count; i++) 
+            //// goes through list to check if order is included
+            //for (int i = 0; i < coffees.Count; i++) 
+            //{
+            //    if (coffees[i] == order)
+            //    {
+            //        Console.WriteLine("The index of " + order + " is " + i + "."); // write index of item
+            //        Console.ReadLine();
+            //    }
+            //    else if (!coffees.Contains(order)) // if the order is not on the list
+            //    {
+            //        Console.WriteLine("Sorry, " + order + " is not on the menu. Please choose a menu item.");
+            //        Console.ReadLine(); //to print message
+            //        break;
+            //    }
+            //}
+
+
+
+            // PART 5
+            List<string> chores = new List<string>() { "dishes", "laundry", "vacuum", "dishes", "windows" };
+            Console.WriteLine("What chore will you start with today: dishes, laundry, vacuum, windows.");
+            string task = Console.ReadLine();
+
+            // goes through the list to see if the things match the task
+            for (int i = 0; i < chores.Count; i++)
             {
-                if (coffees[i] == order)
+                if (chores[i] == task)
                 {
-                    Console.WriteLine("The index of " + order + " is " + i + "."); // write index of item
+                    Console.WriteLine("The index of " + task + " is " + i + "."); //write index of matching chore
                     Console.ReadLine();
                 }
-                else if (!coffees.Contains(order)) // if the order is not on the list
+                // If not on the list, then print error message
+                else if (!chores.Contains(task))
                 {
-                    Console.WriteLine("Sorry, " + order + " is not on the menu. Please choose a menu item.");
-                    Console.ReadLine(); //to print message
+                    Console.WriteLine("Sorry, " + task + " is not a chore on the list. \n" +
+                        "Please choose a task on the list.");
+                    Console.ReadLine();
                     break;
                 }
             }
             
-
-
-            // PART 5
-            //List<string> chores = new List<string>() { "dishes", "laundry", "vacuum", "dishes", "windows" };
-            //Console.WriteLine("What chore will you start with today: dishes, laundry, vacuum, windows.");
-            //string task = Console.ReadLine();
-
-            //if (chores.Contains(task)) //if the list contains the task then 
-            //{
-            //    foreach (string chore in chores)
-            //    {
-            //        Console.WriteLine(chores.IndexOf(task)); //write the index of the task that matches
-            //        Console.ReadLine();
-            //    }
-            //}
-            //else // if choose something not on list
-            //{
-            //    Console.WriteLine("Sorry, please choose a task on the list.");
-            //    Console.ReadLine();
-
-            //}
-
-            //foreach (string chore in chores)
-            //{
-            //    while (chores.Contains(task))
-            //    {
-            //        Console.WriteLine(chores.IndexOf(task));
-            //        Console.ReadLine();
-
-            //    }
-            //    Console.WriteLine("Sorry, please choose a task on the list.");
-            //    Console.ReadLine();
-
-
-            //}
 
 
             //// PART 6
@@ -155,7 +145,7 @@ namespace ConsoleAppAssignment
             //    {
             //        hasDuplicate.Add(l);
             //    }
-                    
+
             //}
 
             //foreach (string l in noDuplicate) //listing out the ones that are unique
