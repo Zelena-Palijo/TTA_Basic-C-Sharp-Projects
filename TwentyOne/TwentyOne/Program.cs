@@ -12,6 +12,7 @@ namespace TwentyOne
         {
 
             Deck deck = new Deck(); //instatiated an object named deck object of Deck
+            deck = Shuffle(deck);
             
             foreach (Card card in deck.Cards)
             {
@@ -24,7 +25,18 @@ namespace TwentyOne
 
         public static Deck Shuffle(Deck deck)
         {
+            //create a temporary list where the items will go
+            List<Card> TempList = new List<Card>();
             Random random = new Random();
+
+            while (deck.Cards.Count > 0)
+            {
+                int randomIndex = random.Next(0, deck.Cards.Count);
+                TempList.Add(deck.Cards[randomIndex]);
+                deck.Cards.RemoveAt(randomIndex);
+            }
+            deck.Cards = TempList;
+            return deck;
         }
     }
 }
