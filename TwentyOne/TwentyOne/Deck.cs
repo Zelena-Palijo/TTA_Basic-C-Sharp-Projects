@@ -8,6 +8,12 @@ namespace TwentyOne
 {
     public class Deck
     {
+        //add constructor here
+        public Deck()
+        {
+
+        }
+
         public List<Card> Cards { get; set; }
     }
 }
