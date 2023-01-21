@@ -114,24 +114,24 @@ namespace ConsoleAppAssignment
             
 
             // PART 5
-            List<string> chores = new List<string>() { "dishes", "laundry", "vacuum", "dishes", "windows" };
-            Console.WriteLine("What chore will you start with today: dishes, laundry, vacuum, windows.");
-            string task = Console.ReadLine();
+            //List<string> chores = new List<string>() { "dishes", "laundry", "vacuum", "dishes", "windows" };
+            //Console.WriteLine("What chore will you start with today: dishes, laundry, vacuum, windows.");
+            //string task = Console.ReadLine();
 
-            if (chores.Contains(task))
-            {
-                foreach (string chore in chores)
-                {
-                    Console.WriteLine(chores.IndexOf(task));
-                    Console.ReadLine();
-                }
-            }
-            else
-            {
-                Console.WriteLine("Sorry, please choose a task on the list.");
-                Console.ReadLine();
+            //if (chores.Contains(task))
+            //{
+            //    foreach (string chore in chores)
+            //    {
+            //        Console.WriteLine(chores.IndexOf(task));
+            //        Console.ReadLine();
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Sorry, please choose a task on the list.");
+            //    Console.ReadLine();
 
-            }
+            //}
 
             //foreach (string chore in chores)
             //{
@@ -143,10 +143,40 @@ namespace ConsoleAppAssignment
             //    }
             //    Console.WriteLine("Sorry, please choose a task on the list.");
             //    Console.ReadLine();
-                  
-                
+
+
             //}
 
+
+            // PART 6
+            List<string> letters = new List<string>() { "a", "b", "c", "d", "d" };
+            List<string> noDuplicate = new List<string>(); //no duplicates
+            List<string> hasDuplicate = new List<string>(); // has duplicates
+
+            foreach (string l in letters)
+            {
+                if (!letters.Contains(l))
+                { // if the list does NOT contain the letter, add to noDuplicate
+                    noDuplicate.Add(l);
+                }
+                else // if the list does contain the letter, then has to hasDuplicate
+                {
+                    hasDuplicate.Add(l);
+                }
+                    
+            }
+
+            foreach (string l in noDuplicate) //listing out the ones that are unique
+            {
+                Console.WriteLine(l + "- is unique");
+                Console.ReadLine();
+            }
+
+            foreach (string l in hasDuplicate) //listing out the ones with duplicates
+            {
+                Console.WriteLine(l + "- is not unique");
+                Console.ReadLine();
+            }
 
 
 
