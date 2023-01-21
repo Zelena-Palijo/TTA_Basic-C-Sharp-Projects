@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace ConsoleAppAssignment
 {
@@ -9,27 +12,23 @@ namespace ConsoleAppAssignment
         {
             //// PART 1
 
-            //string[] colorArray = { "brown", "black", "white", "cerulean" }; // array of strings
-            //List<string> colors = new List<string>(colorArray); //convert to list to add items
-            //List<string> colors = new List<string>() { "brown", "black", "white", "cerulean" };
-            ////made it a list, but can make it an array also
+            string[] colors = new string[] { "brown", "black", "white", "cerulean" }; // array of strings
+            Console.WriteLine("What's your favourite color?"); // prompt to input text
+            colors = colors.Append(Console.ReadLine()).ToArray();
 
-            //Console.WriteLine("What's your favourite color?"); // prompt to input text
-            //string newColor = Console.ReadLine();
-            //colors.Add(newColor); // adds user's text input to the end of the string
+            foreach (string color in colors) //loops through and adds the input to end of each string
+            {
+                Console.WriteLine(color);
+            }
 
-            //foreach (string color in colors) //loops through and adds the input to end of each string
-            //{
-            //    Console.WriteLine(color + " " + newColor);
-            //}
-
-            ////second loop
-            //Console.WriteLine("\n Here are some other people's favorite colors: ");
-            //foreach (string color in colors)
-            //{
-            //    Console.WriteLine(color);
-            //}
-            //Console.ReadLine();
+            //second loop
+            Console.WriteLine("\n Here are some other people's favorite colors: ");
+            foreach (string color in colors)
+            {
+                Console.WriteLine(color);
+                
+            }
+            Console.ReadLine();
 
 
             //// PART 2 
@@ -106,28 +105,28 @@ namespace ConsoleAppAssignment
 
 
             // PART 5
-            List<string> chores = new List<string>() { "dishes", "laundry", "vacuum", "dishes", "windows" };
-            Console.WriteLine("What chore will you start with today: dishes, laundry, vacuum, windows.");
-            string task = Console.ReadLine();
+            //List<string> chores = new List<string>() { "dishes", "laundry", "vacuum", "dishes", "windows" };
+            //Console.WriteLine("What chore will you start with today: dishes, laundry, vacuum, windows.");
+            //string task = Console.ReadLine();
 
-            // goes through the list to see if the things match the task
-            for (int i = 0; i < chores.Count; i++)
-            {
-                if (chores[i] == task)
-                {
-                    Console.WriteLine("The index of " + task + " is " + i + "."); //write index of matching chore
-                    Console.ReadLine();
-                }
-                // If not on the list, then print error message
-                else if (!chores.Contains(task))
-                {
-                    Console.WriteLine("Sorry, " + task + " is not a chore on the list. \n" +
-                        "Please choose a task on the list.");
-                    Console.ReadLine();
-                    break;
-                }
-            }
-            
+            //// goes through the list to see if the things match the task
+            //for (int i = 0; i < chores.Count; i++)
+            //{
+            //    if (chores[i] == task)
+            //    {
+            //        Console.WriteLine("The index of " + task + " is " + i + "."); //write index of matching chore
+            //        Console.ReadLine();
+            //    }
+            //    // If not on the list, then print error message
+            //    else if (!chores.Contains(task))
+            //    {
+            //        Console.WriteLine("Sorry, " + task + " is not a chore on the list. \n" +
+            //            "Please choose a task on the list.");
+            //        Console.ReadLine();
+            //        break;
+            //    }
+            //}
+
 
 
             //// PART 6
