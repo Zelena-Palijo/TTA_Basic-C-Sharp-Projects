@@ -87,30 +87,21 @@ namespace ConsoleAppAssignment
                 "latte, americano, iced, regular");
             string order = Console.ReadLine();
 
-            foreach (string coffee in coffees) // goes through each item in list 
+            // goes through list to check if order is included
+            for (int i = 0; i < coffees.Count; i++) 
             {
-
-                if (coffees.Contains(order)) // if the order on the list
+                if (coffees[i] == order)
                 {
-                    Console.WriteLine(coffees.IndexOf(order)); // write index of item
+                    Console.WriteLine("The index of " + order + "is " + i + "."); // write index of item
                     Console.ReadLine();
                 }
-                else
+                else if (!coffees.Contains(order)) // if the order is not on the list
                 {
-                    Console.WriteLine("Sorry, that item is not on the menu. Please choose a menu item.");
-                    Console.ReadLine();
+                    Console.WriteLine("Sorry, " + order + "is not on the menu. Please choose a menu item.");
+                    break;
                 }
             }
-            // tried alternate with while loop, but could not get it to work see below:
-            //while (!coffees.Contains(order)) //made it if not contains, then will keep saying
-            //    //until gives option on list
-            //{
-            //    Console.WriteLine("Sorry, that item is not on the menu. Please choose a menu item.");
-            //    Console.ReadLine();
-            //    break;
-            //}
-            //Console.WriteLine(coffees.IndexOf(order)); // write index of item
-            //Console.ReadLine();
+            
 
 
             // PART 5
