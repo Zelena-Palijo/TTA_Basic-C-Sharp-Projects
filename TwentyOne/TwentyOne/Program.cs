@@ -10,6 +10,14 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
+            Card cardOne = new Card(); // instantiate the object
+            //give the properties some values
+            //cardOne.Face = "Queen";
+            //cardOne.Suit = "Spades";
+
+            Console.WriteLine(cardOne.Face + " of " + cardOne.Suit);
+            Console.ReadLine();
+
         }
     }
 }
