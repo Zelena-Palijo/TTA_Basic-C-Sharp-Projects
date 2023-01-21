@@ -8,5 +8,6 @@ namespace TwentyOne
 {
     public class Deck
     {
+        public List<Card> Cards { get; set; }
     }
 }
