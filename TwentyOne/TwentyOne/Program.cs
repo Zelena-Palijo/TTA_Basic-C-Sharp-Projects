@@ -21,5 +21,10 @@ namespace TwentyOne
             Console.ReadLine();
 
         }
+
+        public static Deck Shuffle(Deck deck)
+        {
+            Random random = new Random();
+        }
     }
 }
