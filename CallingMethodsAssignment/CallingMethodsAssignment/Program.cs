@@ -11,9 +11,10 @@ namespace CallingMethodsAssignment
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose a number.");
-            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num1 = Convert.ToInt32(Console.ReadLine()); //define num1, input stated in method 
 
             //calling methods here, inputting num1
+            // "Math. ___" calls other class here
             int result1 = Math.MultiplyBy72(num1);
             int result2 = Math.DivideBy3(num1);
             int result3 = Math.Add59(num1);
