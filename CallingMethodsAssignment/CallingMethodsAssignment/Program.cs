@@ -13,9 +13,15 @@ namespace CallingMethodsAssignment
             Console.WriteLine("Please choose a number.");
             int num1 = Convert.ToInt32(Console.ReadLine());
 
-            Math.MultiplyBy72();
-            Math.DivideBy3();
-            Math.Add59;
+            //calling methods here, inputting num1
+            int result1 = Math.MultiplyBy72(num1);
+            int result2 = Math.DivideBy3(num1);
+            int result3 = Math.Add59(num1);
+
+            Console.WriteLine(num1 + " multiplied by 72 is " + result1);
+            Console.WriteLine(num1 + " divided by 3 is " + result2);
+            Console.WriteLine(num1 + " added by 59 is " + result3);
+            Console.ReadLine();
         }
 
 
