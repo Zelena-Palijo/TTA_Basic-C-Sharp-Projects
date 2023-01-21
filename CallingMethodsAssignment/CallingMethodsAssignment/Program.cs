@@ -10,6 +10,15 @@ namespace CallingMethodsAssignment
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Please choose a number.");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+
+            Math.MultiplyBy72();
+            Math.DivideBy3();
+            Math.Add59;
         }
+
+
+        
     }
 }

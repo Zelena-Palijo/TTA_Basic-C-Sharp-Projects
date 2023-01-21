@@ -32,6 +32,7 @@ namespace CallingMethodsAssignment
             add = num1 + 59;
             return add;
         }
+
     }
 
         
