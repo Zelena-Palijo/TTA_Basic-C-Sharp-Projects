@@ -12,7 +12,8 @@ namespace TwentyOne
         {
 
             Deck deck = new Deck(); //instatiated an object named deck object of Deck
-            deck = Shuffle(deck: deck, times: 3);
+            int timesShuffled = 0;
+            deck = Shuffle(deck, out timesShuffled, 3);
             
             
             foreach (Card card in deck.Cards)
@@ -20,12 +21,16 @@ namespace TwentyOne
                 Console.WriteLine(card.Face + " of " + card.Suit);
             }
             Console.WriteLine(deck.Cards.Count);
+            Console.WriteLine("Times shuffled {0}", timesShuffled);
             Console.ReadLine();
 
         }
 
-        public static Deck Shuffle(Deck deck, int times = 1)
+        //out variable is timesShuffled
+        public static Deck Shuffle(Deck deck, out int timesShuffled, int times = 1)
         {
+            timesShuffled = 0;
+            //every time you loop, add to timesShuffled
             for (int i = 0; i < times; i++)
             {
                 //create a temporary list where the items will go
