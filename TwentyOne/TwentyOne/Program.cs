@@ -13,8 +13,11 @@ namespace TwentyOne
 
             Deck deck = new Deck(); //instatiated an object named deck object of Deck
             
-
-            //Console.WriteLine(cardOne.Face + " of " + cardOne.Suit);
+            foreach (Card card in deck.Cards)
+            {
+                Console.WriteLine(card.Face + " of " + card.Suit);
+            }
+            Console.WriteLine(deck.Cards.Count);
             Console.ReadLine();
 
         }
