@@ -12,7 +12,7 @@ namespace TwentyOne
         {
 
             Deck deck = new Deck(); //instatiated an object named deck object of Deck
-            deck = Shuffle(deck, 3);
+            deck = Shuffle(deck: deck, times: 3);
             
             
             foreach (Card card in deck.Cards)
