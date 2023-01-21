@@ -92,12 +92,13 @@ namespace ConsoleAppAssignment
             {
                 if (coffees[i] == order)
                 {
-                    Console.WriteLine("The index of " + order + "is " + i + "."); // write index of item
+                    Console.WriteLine("The index of " + order + " is " + i + "."); // write index of item
                     Console.ReadLine();
                 }
                 else if (!coffees.Contains(order)) // if the order is not on the list
                 {
-                    Console.WriteLine("Sorry, " + order + "is not on the menu. Please choose a menu item.");
+                    Console.WriteLine("Sorry, " + order + " is not on the menu. Please choose a menu item.");
+                    Console.ReadLine(); //to print message
                     break;
                 }
             }
