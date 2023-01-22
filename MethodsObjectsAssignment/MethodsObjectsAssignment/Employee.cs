@@ -8,5 +8,6 @@ namespace MethodsObjectsAssignment
 {
     class Employee : Person // Employee inherits from Person
     {
+        public int Id { get; set; }
     }
 }
