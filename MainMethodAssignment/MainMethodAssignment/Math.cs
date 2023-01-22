@@ -17,7 +17,7 @@ namespace MainMethodAssignment
         }
 
         //second method, bring in decimal return to int
-        public static int DivideBy2(float num2)
+        public static int DivideBy2(decimal num2)
         {
             int div;
             div = Convert.ToInt32(num2 / 2); //since come in float, convert to int
