@@ -15,7 +15,9 @@ namespace TwentyOne
         public abstract void Play();
         // indicates any game that inherits from Game will include Play method
 
-        public void ListPlayers()
+        public virtual void ListPlayers() 
+            //virtual method in abstract class gets inherited by inheriting class, 
+            //but can override it
         {
             foreach (string player in Players)
             {
