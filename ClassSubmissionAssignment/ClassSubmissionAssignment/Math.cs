@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassSubmissionAssignment
 {
-    public static class Math //declared class to be static
+    public class Math //declared class to be static, but won't call methods
     {
         //Method 1 - Void, divide by 2
         public static void Half(int num1)

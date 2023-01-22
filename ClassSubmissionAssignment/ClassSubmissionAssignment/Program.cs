@@ -11,7 +11,7 @@ namespace ClassSubmissionAssignment
         static void Main(string[] args)
         {
 
-            Math m1 = new Math(); // instantiate the class
+            Math math = new Math(); // instantiate the class
 
             //Calling method to divide by 2
             Console.WriteLine("Pick a number.");
@@ -38,8 +38,8 @@ namespace ClassSubmissionAssignment
             int result4 = Math.Multiplyby10(num3, num4);
             Console.WriteLine(result4);
             Console.ReadLine();
-            
-            
+
+
         }
     }
 }
