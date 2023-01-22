@@ -43,10 +43,11 @@ namespace TwentyOne
         public List<Card> Cards { get; set; }
 
 
-        //out variable is timesShuffled
-        public static Deck Shuffle(Deck deck, out int timesShuffled, int times = 1)
+        //out variable is timesShuffled >> removed
+        //removed static, so the deck belongs to the object created there
+        public void Shuffle(int times = 1) //since operating on a deck, got rid of Deck deck
         {
-            timesShuffled = 0;
+            //timesShuffled = 0;
             //every time you loop, add to timesShuffled
             for (int i = 0; i < times; i++)
             {
@@ -54,16 +55,17 @@ namespace TwentyOne
                 List<Card> TempList = new List<Card>();
                 Random random = new Random();
 
-                while (deck.Cards.Count > 0)
+                while (Cards.Count > 0) // was deck.Cards.Count but since operating on these cards
+                    //can just remove deck
                 {
-                    int randomIndex = random.Next(0, deck.Cards.Count);
-                    TempList.Add(deck.Cards[randomIndex]);
-                    deck.Cards.RemoveAt(randomIndex);
+                    int randomIndex = random.Next(0, Cards.Count);
+                    TempList.Add(Cards[randomIndex]);
+                    Cards.RemoveAt(randomIndex);
                 }
-                deck.Cards = TempList;
+                Cards = TempList;
             }
 
-            return deck;
+            //return deck; // no need to return anything since doing internally
         }
     }
 }
