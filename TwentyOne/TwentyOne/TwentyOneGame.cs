@@ -8,5 +8,9 @@ namespace TwentyOne
 {
     public class TwentyOneGame : Game  //TwentyOneGame inherits from Game
     {
+        public void Play()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

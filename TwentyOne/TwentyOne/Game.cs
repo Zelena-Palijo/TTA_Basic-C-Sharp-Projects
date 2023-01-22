@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TwentyOne
 {
-    public class Game
+    public class Game // a "super" class
     {
         public List<string> Players { get; set; }
         public string Name { get; set; }
