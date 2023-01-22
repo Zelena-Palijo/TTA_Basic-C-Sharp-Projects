@@ -10,8 +10,12 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
+            TwentyOneGame game = new TwentyOneGame();
+            
             Deck deck = new Deck(); //instatiated an object named deck object of Deck
             deck.Shuffle();
+
+
             //ex, deck.Shuffle(3) >> calls method on itself
             //int timesShuffled = 0;
             //deck = Shuffle(deck, out timesShuffled, 3);

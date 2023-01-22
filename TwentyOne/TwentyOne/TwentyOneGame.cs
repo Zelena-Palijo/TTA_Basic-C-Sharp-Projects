@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TwentyOne
 {
-    class TwentyOneGame
+    public class TwentyOneGame : Game  //TwentyOneGame inherits from Game
     {
     }
 }
