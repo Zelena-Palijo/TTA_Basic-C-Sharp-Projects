@@ -27,9 +27,16 @@ namespace ClassSubmissionAssignment
             Console.WriteLine(result + " {0}", message);
             Console.ReadLine();
 
-            // Calling overloaded method
-            Math.Multiplyby10(5);
-            Math.Multiplyby10(5, 10);
+            // Calling overloaded method 1
+            Console.WriteLine("Pick a number: ");
+            int num3 = Convert.ToInt32(Console.ReadLine());
+            int result3 = Math.Multiplyby10(num3);
+            Console.WriteLine(result3);
+            Console.ReadLine();
+
+            int num4 = 10;
+            int result4 = Math.Multiplyby10(num3, num4);
+            Console.WriteLine(result4);
             Console.ReadLine();
             
             
