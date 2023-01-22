@@ -10,6 +10,9 @@ namespace PolymorphismAssignment
     {
         static void Main(string[] args)
         {
+
+            Employee person = new Employee(); // polymorphism
+            person.Quit();  //calling interface method here
         }
     }
 }
