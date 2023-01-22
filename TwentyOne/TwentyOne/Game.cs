@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TwentyOne
 {
-    public class Game // a "super" class
+    public class Game //will be a base class or abstract class
     {
         public List<string> Players { get; set; }
         public string Name { get; set; }
