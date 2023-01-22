@@ -6,11 +6,16 @@ using System.Threading.Tasks;
 
 namespace PolymorphismAssignment
 {
-    public class Employee : Person
+    public class Employee : Person, IQuittable
     {
         public override void SayName()
         {
             Console.WriteLine("Name: " + firstName + " " + lastName);
+        }
+
+        public void Quit()
+        {
+            throw new NotImplementedException();
         }
     }
 }
