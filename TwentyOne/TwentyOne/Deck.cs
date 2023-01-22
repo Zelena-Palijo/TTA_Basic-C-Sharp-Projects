@@ -41,5 +41,29 @@ namespace TwentyOne
         }
 
         public List<Card> Cards { get; set; }
+
+
+        //out variable is timesShuffled
+        public static Deck Shuffle(Deck deck, out int timesShuffled, int times = 1)
+        {
+            timesShuffled = 0;
+            //every time you loop, add to timesShuffled
+            for (int i = 0; i < times; i++)
+            {
+                //create a temporary list where the items will go
+                List<Card> TempList = new List<Card>();
+                Random random = new Random();
+
+                while (deck.Cards.Count > 0)
+                {
+                    int randomIndex = random.Next(0, deck.Cards.Count);
+                    TempList.Add(deck.Cards[randomIndex]);
+                    deck.Cards.RemoveAt(randomIndex);
+                }
+                deck.Cards = TempList;
+            }
+
+            return deck;
+        }
     }
 }
