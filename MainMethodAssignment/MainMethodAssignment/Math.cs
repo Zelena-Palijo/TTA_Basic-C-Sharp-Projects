@@ -15,5 +15,13 @@ namespace MainMethodAssignment
             mult = num1 * 5;
             return mult;
         }
+
+        //second method, bring in decimal return to int
+        public static int DivideBy2(float num1)
+        {
+            int div;
+            div = Convert.ToInt32(num1 / 2); //since come in float, convert to int
+            return div;
+        }
     }
 }
