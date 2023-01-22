@@ -8,5 +8,10 @@ namespace VoidMethodAssignment
 {
     class Math
     {
+        public void Sum(int num1, int num2)
+        {
+            Console.WriteLine("sum = " + (num1 + num2));
+            Console.ReadLine();
+        }
     }
 }
