@@ -23,5 +23,22 @@ namespace ClassSubmissionAssignment
             message = "It's been done.";
             return add;
         }
+
+        //Methods 3,4 Overloading method
+        public static int Multiplyby10(int num3)
+        {
+            int mult;
+            mult = num3 * 10;
+            return mult;
+           
+        }
+
+        public static int Multiplyby10(int num3, int num4)
+        {
+            int mult;
+            mult = num3 * 10 + num4;
+            return mult;
+        }
+
     }
 }
