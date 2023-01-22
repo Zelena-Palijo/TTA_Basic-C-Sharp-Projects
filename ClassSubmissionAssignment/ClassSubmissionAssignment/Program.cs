@@ -16,6 +16,16 @@ namespace ClassSubmissionAssignment
             int num1 = Convert.ToInt32(Console.ReadLine());
             Math.Half(num1);
 
+            //Calling method with output
+            Console.WriteLine("Pick a number.");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            string message = "";
+            int result = Math.Add10(num2, out message);
+
+            Console.WriteLine(result + " {0}", message);
+            Console.ReadLine();
+
+
             
         }
     }

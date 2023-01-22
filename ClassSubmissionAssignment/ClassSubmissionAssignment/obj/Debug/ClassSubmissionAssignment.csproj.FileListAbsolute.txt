@@ -1,0 +1,7 @@
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ClassSubmissionAssignment\ClassSubmissionAssignment\bin\Debug\ClassSubmissionAssignment.exe.config
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ClassSubmissionAssignment\ClassSubmissionAssignment\bin\Debug\ClassSubmissionAssignment.exe
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ClassSubmissionAssignment\ClassSubmissionAssignment\bin\Debug\ClassSubmissionAssignment.pdb
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ClassSubmissionAssignment\ClassSubmissionAssignment\obj\Debug\ClassSubmissionAssignment.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ClassSubmissionAssignment\ClassSubmissionAssignment\obj\Debug\ClassSubmissionAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ClassSubmissionAssignment\ClassSubmissionAssignment\obj\Debug\ClassSubmissionAssignment.exe
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ClassSubmissionAssignment\ClassSubmissionAssignment\obj\Debug\ClassSubmissionAssignment.pdb
