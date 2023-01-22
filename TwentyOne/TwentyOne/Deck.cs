@@ -43,6 +43,7 @@ namespace TwentyOne
         public List<Card> Cards { get; set; }
 
 
+        //CREATED A CLASS METHOD
         //out variable is timesShuffled >> removed
         //removed static, so the deck belongs to the object created there
         public void Shuffle(int times = 1) //since operating on a deck, got rid of Deck deck
