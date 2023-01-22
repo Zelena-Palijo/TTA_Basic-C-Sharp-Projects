@@ -1,0 +1,7 @@
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\MethodAssignment\MethodAssignment\bin\Debug\MethodAssignment.exe.config
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\MethodAssignment\MethodAssignment\bin\Debug\MethodAssignment.exe
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\MethodAssignment\MethodAssignment\bin\Debug\MethodAssignment.pdb
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\MethodAssignment\MethodAssignment\obj\Debug\MethodAssignment.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\MethodAssignment\MethodAssignment\obj\Debug\MethodAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\MethodAssignment\MethodAssignment\obj\Debug\MethodAssignment.exe
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\MethodAssignment\MethodAssignment\obj\Debug\MethodAssignment.pdb
