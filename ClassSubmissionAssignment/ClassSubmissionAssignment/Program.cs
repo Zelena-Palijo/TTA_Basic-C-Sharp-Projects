@@ -10,8 +10,10 @@ namespace ClassSubmissionAssignment
     {
         static void Main(string[] args)
         {
-            //Calling method to divide by 2
 
+            Math m1 = new Math(); // instantiate the class
+
+            //Calling method to divide by 2
             Console.WriteLine("Pick a number.");
             int num1 = Convert.ToInt32(Console.ReadLine());
             Math.Half(num1);
@@ -25,7 +27,11 @@ namespace ClassSubmissionAssignment
             Console.WriteLine(result + " {0}", message);
             Console.ReadLine();
 
-
+            // Calling overloaded method
+            Math.Multiplyby10(5);
+            Math.Multiplyby10(5, 10);
+            Console.ReadLine();
+            
             
         }
     }
