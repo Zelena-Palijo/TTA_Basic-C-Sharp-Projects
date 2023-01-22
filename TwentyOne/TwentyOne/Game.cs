@@ -12,6 +12,9 @@ namespace TwentyOne
         public string Name { get; set; }
         public string Dealer { get; set; }
 
+        public abstract void Play();
+        // indicates any game that inherits from Game will include Play method
+
         public void ListPlayers()
         {
             foreach (string player in Players)
