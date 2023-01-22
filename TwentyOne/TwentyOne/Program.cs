@@ -10,12 +10,7 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-            //TwentyOneGame game = new TwentyOneGame();
-            //game.Players = new List<string>() { "Jesse", "Bill", "Joe" };
-            //game.ListPlayers();
-            //Console.ReadLine();
-
-            //Game game = new TwentyOneGame(); // polymorphism
+            
 
             Deck deck = new Deck(); //instatiated an object named deck object of Deck
             deck.Shuffle();
