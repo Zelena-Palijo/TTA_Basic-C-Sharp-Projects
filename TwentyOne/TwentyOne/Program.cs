@@ -12,9 +12,10 @@ namespace TwentyOne
         {
 
             Deck deck = new Deck(); //instatiated an object named deck object of Deck
-            
-            int timesShuffled = 0;
-            deck = Shuffle(deck, out timesShuffled, 3);
+            deck.Shuffle();
+            //int timesShuffled = 0;
+            //deck = Shuffle(deck, out timesShuffled, 3);
+            //^Changed so that it appears cleaner, calls edited method Shuffle()
             
             
             foreach (Card card in deck.Cards)
