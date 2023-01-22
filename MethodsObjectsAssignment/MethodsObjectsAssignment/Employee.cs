@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MethodsObjectsAssignment
 {
-    class Employee
+    class Employee : Person // Employee inherits from Person
     {
     }
 }
