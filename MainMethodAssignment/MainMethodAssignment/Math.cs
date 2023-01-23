@@ -17,20 +17,21 @@ namespace MainMethodAssignment
         }
 
         //second method, bring in decimal return to int
-        public static int DivideBy2(decimal num2)
+        public static int MultiplyBy5(decimal num2)
         {
-            int div;
-            div = Convert.ToInt32(num2 / 2); //since come in float, convert to int
-            return div;
+            int num3 = Convert.ToInt32(num2);
+            int mult;
+            mult = num3 * 5; //since come in float, convert to int
+            return mult;
         }
 
         //third method, bring in string return to int
-        public static int Add50(string num3)
+        public static int MultiplyBy5(string num4)
         {
-
-            int add;
-            add = Convert.ToInt32(num3 + 50); // since come in as string, convert to int
-            return add;
+            int num5 = Convert.ToInt32(num4);
+            int mult;
+            mult = num5 * 5; // since come in as string, convert to int
+            return mult;
         }
     }
 }
