@@ -93,6 +93,7 @@ namespace ConsoleAppAssignment
                 {
                     Console.WriteLine("The index of " + order + " is " + i + "."); // write index of item
                     Console.ReadLine();
+                    break;
                 }
                 else if (!coffees.Contains(order)) // if the order is not on the list
                 {
