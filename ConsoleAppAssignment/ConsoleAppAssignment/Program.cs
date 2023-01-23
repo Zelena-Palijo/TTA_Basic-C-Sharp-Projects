@@ -14,11 +14,11 @@ namespace ConsoleAppAssignment
 
             string[] colors = new string[] { "brown", "black", "white", "cerulean" }; // array of strings
             Console.WriteLine("What's your favourite color?"); // prompt to input text
-            colors = colors.Append(Console.ReadLine()).ToArray();
+            string input = Console.ReadLine();
 
-            foreach (string color in colors) //loops through and adds the input to end of each string
+            for (int i=0; i< colors.Length; i++) //loops through and adds the input to end of each string
             {
-                Console.WriteLine(color);
+                colors[i] += input;
             }
 
             //second loop
