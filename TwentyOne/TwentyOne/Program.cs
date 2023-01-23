@@ -14,8 +14,8 @@ namespace TwentyOne
             game.Players = new List<Player>();
             Player player = new Player();
             player.Name = "Jesse";
-            game = game + player;
-            game = game - player;
+            game += player;
+            game -= player;
             
             Deck deck = new Deck(); //instatiated an object named deck object of Deck
             deck.Shuffle(3);
