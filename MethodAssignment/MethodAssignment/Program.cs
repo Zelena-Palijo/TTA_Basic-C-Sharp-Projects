@@ -21,7 +21,7 @@ namespace MethodAssignment
             // if user inputs something then convert to int and proceed 
             if (!string.IsNullOrEmpty(checkNum2))
             {
-                int num2 = Convert.ToInt32(Console.ReadLine());
+                int num2 = Convert.ToInt32(checkNum2);
                 //when above is processed, throws error that input method doesn't work
                 //worked the first time, but when input for second is 2, then error
                 int result1 = Math.MultiplyBy5(num1, num2);
