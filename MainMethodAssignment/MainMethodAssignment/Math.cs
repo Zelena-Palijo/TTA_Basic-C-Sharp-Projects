@@ -19,7 +19,7 @@ namespace MainMethodAssignment
         //second method, bring in decimal return to int
         public static int MultiplyBy5(decimal num2)
         {
-            int num3 = Convert.ToInt32(Convert.ToDecimal(num2));
+            int num3 = Convert.ToInt32(num2);
             int mult;
             mult = num3 * 5; //since come in decimal, convert to int
             return mult;
