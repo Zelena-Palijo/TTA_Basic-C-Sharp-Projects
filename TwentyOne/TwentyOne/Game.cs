@@ -8,7 +8,7 @@ namespace TwentyOne
 {
     public abstract class Game //will be a base class or abstract class
     {
-        public List<string> Players { get; set; }
+        public List<Player> Players { get; set; }
         public string Name { get; set; }
         public string Dealer { get; set; }
 
@@ -19,9 +19,9 @@ namespace TwentyOne
             //virtual method in abstract class gets inherited by inheriting class, 
             //but can override it
         {
-            foreach (string player in Players)
+            foreach (Player player in Players)
             {
-                Console.WriteLine(player);
+                Console.WriteLine(player.Name);
             }
         }
     }
