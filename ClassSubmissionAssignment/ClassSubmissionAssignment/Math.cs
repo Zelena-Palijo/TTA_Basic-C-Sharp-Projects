@@ -9,14 +9,14 @@ namespace ClassSubmissionAssignment
     public class Math //declared class to be static, but won't call methods
     {
         //Method 1 - Void, divide by 2
-        public static void Half(int num1)
+        public void Half(int num1)
         {
             Console.WriteLine("Half of " + num1 + " equals " + (num1 / 2));
             Console.ReadLine();
         }
 
         //Method 2 - output parameters
-        public static int Add10(int num2, out string message)
+        public int Add10(int num2, out string message)
         {
             int add;
             add = num2 + 10;
@@ -25,7 +25,7 @@ namespace ClassSubmissionAssignment
         }
 
         //Methods 3,4 Overloading method
-        public static int Multiplyby10(int num3)
+        public int Multiplyby10(int num3)
         {
             int mult;
             mult = num3 * 10;
@@ -33,7 +33,7 @@ namespace ClassSubmissionAssignment
            
         }
 
-        public static int Multiplyby10(int num3, int num4)
+        public int Multiplyby10(int num3, int num4)
         {
             int mult;
             mult = num3 * 10 + num4;
