@@ -10,8 +10,10 @@ namespace PolymorphismAssignment
     {
         static void Main(string[] args)
         {
+            Employee employee = new Employee(); //instantiated class to check if method works
+            employee.SayName(); 
 
-            Employee person = new Employee(); // polymorphism
+            IQuittable person = new Employee(); // create object of type iQuittable
             person.Quit();  //calling interface method here
         }
     }

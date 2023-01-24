@@ -13,9 +13,10 @@ namespace PolymorphismAssignment
             Console.WriteLine("Name: " + firstName + " " + lastName);
         }
 
-        public void Quit()
+        public void Quit() //added method body to check if working
         {
-            throw new NotImplementedException();
+            Console.WriteLine("This is the quit method.");
+            Console.ReadLine();
         }
     }
 }
