@@ -10,18 +10,21 @@ namespace VoidMethodAssignment
     {
         static void Main(string[] args)
         {
-          
+
+            Math math = new Math(); //instantiate the class
+
             Console.WriteLine("Pick a number.");
             int num1 = Convert.ToInt32(Console.ReadLine());
 
             Console.WriteLine("Pick a second number.");
             int num2 = Convert.ToInt32(Console.ReadLine());
 
-            Math math = new Math(); //instantiate the class
+            //call method normal way
             math.Sum(num1, num2); // call the method, but void 
-            //Console.WriteLine(num1 + " plus " + num2 + " equals " + result);
-           
-            //Console.ReadLine();
+
+            //call method second way with named method
+            math.Sum(num1: 13, num2: 14);
+
 
             //cannot run due to void method?
         }
