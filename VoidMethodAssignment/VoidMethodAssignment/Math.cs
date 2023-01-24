@@ -10,7 +10,10 @@ namespace VoidMethodAssignment
     {
         public void Sum(int num1, int num2)
         {
-            Console.WriteLine("sum = " + (num1 + num2));
+            int add;
+            add = num1 + 3;
+            
+            Console.WriteLine(num2);
             Console.ReadLine();
         }
     }
