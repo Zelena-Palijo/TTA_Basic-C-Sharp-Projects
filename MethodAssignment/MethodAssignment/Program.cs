@@ -10,6 +10,8 @@ namespace MethodAssignment
     {
         static void Main(string[] args)
         {
+            Math math = new Math(); // instantiate the class
+
             //calling first method
             Console.WriteLine("Pick a number.");
             int num1 = Convert.ToInt32(Console.ReadLine());
