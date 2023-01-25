@@ -10,7 +10,6 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-           
             Deck deck = new Deck(); //instatiated an object named deck object of Deck
             deck.Shuffle(3);
 
