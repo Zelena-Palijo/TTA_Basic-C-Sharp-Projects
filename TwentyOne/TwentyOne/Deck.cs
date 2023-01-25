@@ -14,6 +14,19 @@ namespace TwentyOne
             //easier way using nested for/each loop instead of writing it out
             Cards = new List<Card>();
             
+            //Building deck method from scratch
+            //Loops through 52x, create new card 52 times
+            for (int i = 0; i < 13; i++)
+            {
+                for (int j = 0; j < 4; j++)
+                {
+                    Card card = new Card();
+                    card.Face = (Face)i; // casting to Face, j
+                    card.Suit = (Suit)j;
+                    Cards.Add(card);
+
+                }
+            }
 
         }
 
