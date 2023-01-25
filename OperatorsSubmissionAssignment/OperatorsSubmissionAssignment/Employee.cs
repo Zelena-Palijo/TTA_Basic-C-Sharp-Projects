@@ -11,5 +11,15 @@ namespace OperatorsSubmissionAssignment
         public string Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
+
+        public override bool Equals(object employee)
+        {
+            return base.Equals(employee);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
     }
 }
