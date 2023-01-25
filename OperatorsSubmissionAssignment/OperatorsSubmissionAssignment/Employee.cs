@@ -8,7 +8,7 @@ namespace OperatorsSubmissionAssignment
 {
     public class Employee
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
@@ -22,17 +22,17 @@ namespace OperatorsSubmissionAssignment
             return base.GetHashCode();
         }
 
-        public static bool operator== (Employee Id, Employee FirstName)
+        public static bool operator== (Employee Id1, Employee Id2)
         {
-            if (Id.Equals(FirstName))
+            if (Id1.Equals(Id2))
                 return true;
             else
                 return false;
         }
 
-        public static bool operator !=(Employee Id, Employee FirstName)
+        public static bool operator !=(Employee Id1, Employee Id2)
         {
-            if (Id.Equals(FirstName))
+            if (Id1.Equals(Id2))
                 return false;
             else
                 return true;

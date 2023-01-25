@@ -10,6 +10,9 @@ namespace OperatorsSubmissionAssignment
     {
         static void Main(string[] args)
         {
+            Employee employee = new Employee(); // instantiate the class
+
+
         }
     }
 }
