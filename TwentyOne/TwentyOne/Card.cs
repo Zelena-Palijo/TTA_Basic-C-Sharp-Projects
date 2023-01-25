@@ -17,9 +17,26 @@ namespace TwentyOne
 
     public enum Suit
     {
-        Clubs,
-        Diamonds,
-        Hearts,
-        Spades
+        Clubs, // value 0, can also assign underlying values
+        Diamonds, //1
+        Hearts, //2
+        Spades // 3
+    }
+
+    public enum Face
+    {
+        Two,
+        Three,
+        Four,
+        Five,
+        Six,
+        Seven,
+        Eight,
+        Nine,
+        Ten,
+        Jack, 
+        Queen,
+        King,
+        Ace
     }
 }
