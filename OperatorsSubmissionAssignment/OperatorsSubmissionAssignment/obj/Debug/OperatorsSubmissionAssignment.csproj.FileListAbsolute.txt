@@ -1,0 +1,7 @@
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\OperatorsSubmissionAssignment\OperatorsSubmissionAssignment\bin\Debug\OperatorsSubmissionAssignment.exe.config
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\OperatorsSubmissionAssignment\OperatorsSubmissionAssignment\bin\Debug\OperatorsSubmissionAssignment.exe
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\OperatorsSubmissionAssignment\OperatorsSubmissionAssignment\bin\Debug\OperatorsSubmissionAssignment.pdb
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\OperatorsSubmissionAssignment\OperatorsSubmissionAssignment\obj\Debug\OperatorsSubmissionAssignment.csproj.AssemblyReference.cache
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\OperatorsSubmissionAssignment\OperatorsSubmissionAssignment\obj\Debug\OperatorsSubmissionAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\OperatorsSubmissionAssignment\OperatorsSubmissionAssignment\obj\Debug\OperatorsSubmissionAssignment.exe
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\OperatorsSubmissionAssignment\OperatorsSubmissionAssignment\obj\Debug\OperatorsSubmissionAssignment.pdb
