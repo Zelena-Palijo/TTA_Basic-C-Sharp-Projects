@@ -11,13 +11,19 @@ namespace TwentyOne
         static void Main(string[] args)
         {
             Deck deck = new Deck(); //instatiated an object named deck object of Deck
-            deck.Shuffle(3);
 
-            foreach (Card card in deck.Cards)
-            {
-                Console.WriteLine(card.Face + " of " + card.Suit);
-            }
-            Console.WriteLine(deck.Cards.Count);
+            //int count = deck.Cards.Count(x => x.Face == Face.Ace);
+            //lambda function
+
+
+
+            //deck.Shuffle(3);
+
+            //foreach (Card card in deck.Cards)
+            //{
+            //    Console.WriteLine(card.Face + " of " + card.Suit);
+            //}
+            //Console.WriteLine(deck.Cards.Count);
             Console.ReadLine();
 
         }
