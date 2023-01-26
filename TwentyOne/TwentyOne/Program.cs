@@ -10,10 +10,6 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
-            //Card card = new Card();
-            //card.Suit = Suit.Clubs;
-            //int underlyingValue = Convert.ToInt32(Suit.Diamonds);
-
             Deck deck = new Deck(); //instatiated an object named deck object of Deck
             deck.Shuffle(3);
 
