@@ -10,6 +10,12 @@ namespace StructAssignment
     {
         static void Main(string[] args)
         {
+            Number example = new Number(); //create object of struct
+            example.Amount = 1.5m; //assign value to value
+
+            Console.WriteLine(example.Amount);
+            Console.ReadLine();
+            
         }
     }
 }
