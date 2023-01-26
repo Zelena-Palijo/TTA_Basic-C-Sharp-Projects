@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace TwentyOne
 {
-    public class Card
-    {
-        // constructor method name is always the name of the class
-        
-        //Giving Card class a property 
+    public struct Card
+    {        
         public Suit Suit { get; set; }
         public Face Face { get; set; }
     }
