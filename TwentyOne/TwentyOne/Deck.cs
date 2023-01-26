@@ -18,7 +18,7 @@ namespace TwentyOne
             //Loops through 52x, create new card 52 times
             for (int i = 0; i < 13; i++)
             {
-                for (int j = 0; j < 4; j++)
+                for (int j = 0; j < 3; j++)
                 {
                     Card card = new Card();
                     card.Face = (Face)i; // casting to Face, j
