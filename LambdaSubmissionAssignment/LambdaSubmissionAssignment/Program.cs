@@ -24,9 +24,10 @@ namespace LambdaSubmissionAssignment
                 new Employee { Id = 890, FirstName = "Marge", LastName = "Leg" }
             };
 
+            //Use foreach loop
             List<Employee> joeList = new List<Employee>();
             int counter = 0;
-            foreach(Employee employee in employees)
+            foreach (Employee employee in employees)
             {
                 if (employee.FirstName == "Joe")
                 {
@@ -35,9 +36,18 @@ namespace LambdaSubmissionAssignment
                 }
 
             }
-
             Console.WriteLine(joeList.Count());
             Console.ReadLine(); //output should be 2
+
+
+            //try a lambda function "for each employee x in the list, where firstname equals joe
+            int count = employees.Count(x => x.FirstName == "Joe");
+            Console.WriteLine(count);
+            Console.ReadLine();
+
+            
+
+
 
         }
     }
