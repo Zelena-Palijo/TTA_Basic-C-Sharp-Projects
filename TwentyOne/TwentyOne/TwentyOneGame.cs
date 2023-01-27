@@ -10,7 +10,8 @@ namespace TwentyOne
     {
         public override void Play()
         {
-            throw new NotImplementedException();
+            //instantiate a dealer
+            
         }
 
         public override void ListPlayers()
