@@ -10,7 +10,7 @@ namespace LambdaSubmissionAssignment
     {
         static void Main(string[] args)
         {
-            List<Employee> employee = new List<Employee>()
+            List<Employee> employees = new List<Employee>()
             {
                 new Employee { Id = 123, FirstName = "Jane", LastName = "Doe" },
                 new Employee { Id = 456, FirstName = "Mark", LastName = "Smith" },
@@ -24,8 +24,20 @@ namespace LambdaSubmissionAssignment
                 new Employee { Id = 890, FirstName = "Marge", LastName = "Leg" }
             };
 
-            Console.WriteLine(employee.Count());
-            Console.ReadLine();
+            List<Employee> joeList = new List<Employee>();
+            int counter = 0;
+            foreach(Employee employee in employees)
+            {
+                if (employee.FirstName == "Joe")
+                {
+                    joeList.Add(employee);
+                    counter++;
+                }
+
+            }
+
+            Console.WriteLine(joeList.Count());
+            Console.ReadLine(); //output should be 2
 
         }
     }
