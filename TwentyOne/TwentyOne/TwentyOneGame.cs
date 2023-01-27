@@ -8,10 +8,15 @@ namespace TwentyOne
 {
     public class TwentyOneGame : Game, IWalkAway  //TwentyOneGame inherits from Game and IWalkAway
     {
-        public override void Play()
+        public TwentyOneDealer Dealer { get; set; }
+
+        public override void Play() //for all players
         {
-            //instantiate a dealer
-            
+            Dealer = new TwentyOneDealer(); //instantiate a dealer
+            foreach (Player player in Players)
+            {
+
+            }
         }
 
         public override void ListPlayers()
