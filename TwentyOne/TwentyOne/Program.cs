@@ -26,7 +26,12 @@ namespace TwentyOne
                 {
                     game.Play();
                 }
+                game -= player;
+                Console.WriteLine("Thank you for playing!");
             }
+            Console.WriteLine("Feel free to look around the casino. Bye for now.");
+            Console.ReadLine();
+            //All of the above is the entirety of the main method
         }
 
     }
