@@ -112,7 +112,36 @@ namespace TwentyOne
 
             // Dealer turn 
             Dealer.isBusted = TwentyOneRules.IsBusted(Dealer.Hand);
-            Dealer.Stay = TwentyOneRules
+            Dealer.Stay = TwentyOneRules.ShouldDealerStay(Dealer.Hand);
+            while (!Dealer.Stay && !Dealer.isBusted) //while dealer is not staying or is not busted
+            {
+                Console.WriteLine("Dealer is hitting ...");
+                Dealer.Deal(Dealer.Hand);
+                Dealer.isBusted = TwentyOneRules.IsBusted(Dealer.Hand); //check for bust
+                Dealer.Stay = TwentyOneRules.ShouldDealerStay(Dealer.Hand); // check for stay
+            }
+            if (Dealer.Stay)
+            {
+                Console.WriteLine("Dealer is staying.");
+            }
+            if (Dealer.isBusted)
+            {
+                Console.WriteLine("Dealer busted!");
+                foreach(KeyValuePair<Player, int> entry in Bets)
+                {
+                    Console.WriteLine("{0} won {1}!", entry.Key.Name, entry.Value);
+                    Players.Where(x => x.Name == entry.Key.Name).First().Balance += (entry.Value * 2);
+                    Dealer.Balance -= entry.Value;
+                }
+                return;
+            }
+
+            //If everyone stay and no one bust then compare player's hand to dealer's hand
+            //3 options, player>dealer, player<dealer, player=dealer
+            foreach (Player player in Players)
+            {
+
+            }
         }
 
         public override void ListPlayers()
