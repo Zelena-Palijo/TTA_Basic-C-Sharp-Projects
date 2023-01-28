@@ -70,7 +70,49 @@ namespace TwentyOne
                     }
                 }
             }
+            //show player cards, ask hit or stay
+            foreach (Player player in Players)
+            {
+                while (!player.Stay)
+                {
+                    Console.WriteLine("Your cards are: ");
+                    foreach (Card card in player.Hand)
+                    {
+                        Console.WriteLine("{0} ", card.ToString());
+                    }
+                    Console.WriteLine("\n\nHit or stay?");
+                    string answer = Console.ReadLine().ToLower();
+                    if (answer == "stay")
+                    {
+                        player.Stay = true;
+                        break; //end while loop, everything stops
+                    }
+                    else if (answer == "hit")
+                    {
+                        Dealer.Deal(player.Hand);
+                    }
+                    bool busted = TwentyOneRules.IsBusted(player.Hand);
+                    if (busted)
+                    {
+                        Dealer.Balance += Bets[player]; //give dealer money
+                        Console.WriteLine("{0} Busted! You lost your bet of {1}. Your balance is now {2}.", player.Name, Bets[player], player.Balance);
+                        Console.WriteLine("Do you want to play again?");
+                        answer = Console.ReadLine().ToLower();
+                        if (answer == "yes" || answer == "yeah")
+                        {
+                            player.isActivelyPlaying = true;
+                        }
+                        else
+                        {
+                            player.isActivelyPlaying = false;
+                        }
+                    }
+                }
+            }
 
+            // Dealer turn 
+            Dealer.isBusted = TwentyOneRules.IsBusted(Dealer.Hand);
+            Dealer.Stay = TwentyOneRules
         }
 
         public override void ListPlayers()
