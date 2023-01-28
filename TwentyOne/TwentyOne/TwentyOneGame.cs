@@ -21,6 +21,18 @@ namespace TwentyOne
             Dealer.Hand = new List<Card>(); //refresh dealer hand
             Dealer.Stay = false;
             Dealer.Deck = new Deck(); //refresh deck
+
+            Console.WriteLine("Place your bet!");
+
+            foreach (Player player in Players)
+            {
+                int bet = Convert.ToInt32(Console.ReadLine());
+                bool successfullyBet = player.Bet(bet);
+                if (!successfullyBet)
+                {
+                    return; //not return anything, but end method
+                }
+            }
         }
 
         public override void ListPlayers()
