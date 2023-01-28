@@ -8,7 +8,7 @@ namespace TwentyOne
 {
     public class TwentyOneRules
     {
-        private static Dictionary<Face, int> _cardValues = new Dictionary<Face, int>()
+        private readonly static Dictionary<Face, int> _cardValues = new Dictionary<Face, int>()
         {
             [Face.Two] = 2,
             [Face.Three] = 3,
