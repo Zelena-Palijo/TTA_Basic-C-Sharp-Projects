@@ -15,8 +15,12 @@ namespace TwentyOne
             Dealer = new TwentyOneDealer(); //instantiate a dealer
             foreach (Player player in Players)
             {
-
+                player.Hand = new List<Card>(); //refresh deck
+                player.Stay = false;
             }
+            Dealer.Hand = new List<Card>(); //refresh dealer hand
+            Dealer.Stay = false;
+            Dealer.Deck = new Deck(); //refresh deck
         }
 
         public override void ListPlayers()
