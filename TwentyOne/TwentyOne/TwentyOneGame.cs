@@ -42,6 +42,7 @@ namespace TwentyOne
                 {
                     Console.WriteLine("{0}: ", player.Name);
                     Dealer.Deal(player.Hand);
+                    //check for blackjack
                     if (i == 1)
                     {
 
