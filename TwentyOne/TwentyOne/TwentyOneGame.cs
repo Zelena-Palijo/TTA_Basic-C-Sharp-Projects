@@ -32,7 +32,11 @@ namespace TwentyOne
                 {
                     return; //not return anything, but end method
                 }
+                Bets[player] = bet; //Created dictionary Bets, player is key
             }
+
+
+
         }
 
         public override void ListPlayers()
