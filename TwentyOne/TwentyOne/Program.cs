@@ -8,7 +8,7 @@ namespace TwentyOne
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine("Welcome to the Grand Hotel and Casino! First, what is your name?");
             string playerName = Console.ReadLine();
@@ -21,8 +21,8 @@ namespace TwentyOne
                 Player player = new Player(playerName, bank); //create new player
                 Game game = new TwentyOneGame(); //polymorphism
                 game += player;
-                player.isActivelyPlaying = true; //while loop later to keep game going if playing
-                while(player.isActivelyPlaying && player.Balance > 0)
+                player.IsActivelyPlaying = true; //while loop later to keep game going if playing
+                while(player.IsActivelyPlaying && player.Balance > 0)
                 {
                     game.Play();
                 }
