@@ -41,7 +41,7 @@ namespace LambdaSubmissionAssignment
 
 
             //try a lambda function "for each employee x in the list, where firstname equals joe
-            var lambaJoe = employees.Where(x => x.FirstName == "Joe");
+            var lambaJoe = employees.Where(x => x.FirstName == "Joe").ToList();
 
             //check to make sure list has 2 items
             int count = lambaJoe.Count();
@@ -50,9 +50,9 @@ namespace LambdaSubmissionAssignment
 
 
             // Use lambda employees with Id number > 5 
-            var lambda5 = employees.Where(x => x.Id > 5);
+            var lambda5 = employees.Where(x => x.Id > 5).ToList();
 
-            //check to make sure list has 10 items
+            // check to make sure list has 10 items
             int count2 = lambda5.Count();
             Console.WriteLine(count2);
             Console.ReadLine();
