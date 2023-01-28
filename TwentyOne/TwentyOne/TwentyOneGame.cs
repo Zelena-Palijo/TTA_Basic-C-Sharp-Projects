@@ -140,7 +140,24 @@ namespace TwentyOne
             //3 options, player>dealer, player<dealer, player=dealer
             foreach (Player player in Players)
             {
-
+                //bool? can make bool null
+                bool? playerWon = TwentyOneRules.CompareHands(player.Hand, Dealer.Hand);
+                if (playerWon == null) //no one wins
+                {
+                    Console.WriteLine("Push! No one wins."); // push = tie
+                    player.Balance += Bets[player];
+                }
+                else if (playerWon == true) // player wins
+                {
+                    Console.WriteLine("{0} won {1}", player.Name, Bets[player]);
+                    player.Balance += (Bets[player] * 2);
+                    Dealer.Balance -= Bets[player];
+                }
+                else // dealer wins
+                {
+                    Console.WriteLine("Dealer wins {0}!", Bets[player]);
+                    Dealer.Balance += Bets[player];
+                }
             }
         }
 
