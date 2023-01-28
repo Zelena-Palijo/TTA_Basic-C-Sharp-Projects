@@ -100,11 +100,11 @@ namespace TwentyOne
                         answer = Console.ReadLine().ToLower();
                         if (answer == "yes" || answer == "yeah")
                         {
-                            player.isActivelyPlaying = true;
+                            player.IsActivelyPlaying = true;
                         }
                         else
                         {
-                            player.isActivelyPlaying = false;
+                            player.IsActivelyPlaying = false;
                         }
                     }
                 }
@@ -162,11 +162,11 @@ namespace TwentyOne
                 string answer = Console.ReadLine().ToLower();
                 if (answer == "yes" || answer == "yeah")
                 {
-                    player.isActivelyPlaying = true;
+                    player.IsActivelyPlaying = true;
                 }
                 else
                 {
-                    player.isActivelyPlaying = false;
+                    player.IsActivelyPlaying = false;
                 }
             }
             
