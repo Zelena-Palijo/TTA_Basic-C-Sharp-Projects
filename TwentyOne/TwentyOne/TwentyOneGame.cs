@@ -35,7 +35,19 @@ namespace TwentyOne
                 Bets[player] = bet; //Created dictionary Bets, player is key
             }
 
+            for (int i = 0; i < 2; i++) //deal cards to the players
+            {
+                Console.WriteLine("Dealing...");
+                foreach (Player player in Players)
+                {
+                    Console.WriteLine("{0}: ", player.Name);
+                    Dealer.Deal(player.Hand);
+                    if (i == 1)
+                    {
 
+                    }
+                }
+            }
 
         }
 
