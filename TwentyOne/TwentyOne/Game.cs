@@ -10,7 +10,7 @@ namespace TwentyOne
     {
         public List<Player> Players { get; set; }
         public string Name { get; set; }
-        
+        public Dictionary<Player, int> Bets { get; set; } //dictionary property of players, bets
 
         public abstract void Play();
         // indicates any game that inherits from Game will include Play method
