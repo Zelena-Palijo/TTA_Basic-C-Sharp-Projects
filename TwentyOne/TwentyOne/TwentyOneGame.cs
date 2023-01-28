@@ -45,7 +45,14 @@ namespace TwentyOne
                     //check for blackjack
                     if (i == 1)
                     {
-
+                        bool blackJack = TwentyOneRules.CheckForBlackJack(player.Hand);
+                        if (blackJack)
+                        {
+                            Console.WriteLine("Blackjack! {0} wins {1}", player.Name, Bets[player]);
+                            //return player's bet plus winnings
+                            player.Balance += Convert.ToInt32((Bets[player] * 1.5) + Bets[player]);
+                            return;
+                        }
                     }
                 }
             }
