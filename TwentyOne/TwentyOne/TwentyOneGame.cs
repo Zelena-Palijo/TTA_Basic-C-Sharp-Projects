@@ -21,6 +21,7 @@ namespace TwentyOne
             Dealer.Hand = new List<Card>(); //refresh dealer hand
             Dealer.Stay = false;
             Dealer.Deck = new Deck(); //refresh deck
+            Dealer.Deck.Shuffle();
 
             Console.WriteLine("Place your bet!");
 
