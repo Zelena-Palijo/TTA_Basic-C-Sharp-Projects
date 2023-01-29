@@ -103,10 +103,12 @@ namespace TwentyOne
                         if (answer == "yes" || answer == "yeah")
                         {
                             player.IsActivelyPlaying = true;
+                            return;
                         }
                         else
                         {
                             player.IsActivelyPlaying = false;
+                            return;
                         }
                     }
                 }
