@@ -8,7 +8,9 @@ namespace TwentyOne
 {
     public abstract class Game //will be a base class or abstract class
     {
-        public List<Player> Players { get; set; }
+        private List<Player> _players = new List<Player>();
+
+        public List<Player> Players { get { return _players; } set { _players = value; } }
         public string Name { get; set; }
         public Dictionary<Player, int> Bets { get; set; } //dictionary property of players, bets
 
