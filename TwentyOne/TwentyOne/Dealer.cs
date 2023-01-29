@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace TwentyOne
 {
@@ -14,9 +15,15 @@ namespace TwentyOne
 
         public void Deal(List<Card> Hand)
         {
-            Hand.Add(Deck.Cards.First()); 
+            Hand.Add(Deck.Cards.First());
             // First is a built-in method that takes the first of the list
-            Console.WriteLine(Deck.Cards.First().ToString() + "\n");
+            string card = string.Format(Deck.Cards.First().ToString() + "\n");
+            Console.WriteLine(card);
+            using (StreamWriter file = new StreamWriter(@"C:\Users\Owner\Desktop\log.txt", true))
+            {
+                file.WriteLine(DateTime.Now);
+                file.WriteLine(card);
+            }
             Deck.Cards.RemoveAt(0); 
             //Add first item, print to console, then remove it from deck
         }
