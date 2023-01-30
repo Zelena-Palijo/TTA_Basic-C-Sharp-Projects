@@ -6,16 +6,22 @@ using System.Threading.Tasks;
 
 namespace ConstructorAssignment
 {
-    class Student
+    public class Student
     {
+        public string name;
+        public int Id;
+
         //chaining 2 constructors together
-        public Student (string name) : this (name, 00000)
+        public Student (string studentName) : this (studentName, 11111)
         {
 
         }
         //constructor 
-        public Student (string name, int Id)
+        public Student (string studentName, int studentId)
         {
+            name = studentName;
+            Id = studentId;
         }
+        
     }
 }

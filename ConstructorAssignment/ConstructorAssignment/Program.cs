@@ -10,6 +10,11 @@ namespace ConstructorAssignment
     {
         static void Main(string[] args)
         {
+            Student newStudent = new Student("Zelena");
+
+            Console.WriteLine(newStudent.Id); 
+            Console.ReadLine(); //should automatically output 11111
+
         }
     }
 }
