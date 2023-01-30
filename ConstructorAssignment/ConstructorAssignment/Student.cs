@@ -8,11 +8,14 @@ namespace ConstructorAssignment
 {
     class Student
     {
+        //chaining 2 constructors together
+        public Student (string name) : this (name, 00000)
+        {
+
+        }
         //constructor 
         public Student (string name, int Id)
         {
-
-            name = name;
         }
     }
 }
