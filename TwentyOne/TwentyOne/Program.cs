@@ -39,9 +39,17 @@ namespace TwentyOne
                     {
                         game.Play();
                     }
+                    catch (ArgumentException)
+                    {
+                        Console.WriteLine("Something you entered was incorrect.");
+                        Console.ReadLine();
+                        return;
+                    }
                     catch (Exception)
                     {
                         Console.WriteLine("An error occurred. Please contact your system administrator.");
+                        Console.ReadLine();
+                        return;
                     }
                 }
                 game -= player;
