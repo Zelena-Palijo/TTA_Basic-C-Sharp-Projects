@@ -39,9 +39,9 @@ namespace TwentyOne
                     {
                         game.Play();
                     }
-                    catch (ArgumentException)
+                    catch (FraudException)
                     {
-                        Console.WriteLine("Something you entered was incorrect.");
+                        Console.WriteLine("Security! Kick this person out.");
                         Console.ReadLine();
                         return;
                     }
