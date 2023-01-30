@@ -12,8 +12,8 @@ namespace TwentyOne
     {
         static void Main()
         {
-            
-            Console.WriteLine("Welcome to the Grand Hotel and Casino! First, what is your name?");
+            const string casinoName = "Grand Hotel and Casino";
+            Console.WriteLine("Welcome to the {0}! First, what is your name?", casinoName);
             string playerName = Console.ReadLine();
             Console.WriteLine("Great! How much money did you bring today?");
             int bank = Convert.ToInt32(Console.ReadLine());
