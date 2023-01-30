@@ -8,6 +8,10 @@ namespace Casino
 {
     public class Player
     {
+        public Player(string name) : this(name, 100)
+        {
+
+        }
         //Constructor
         public Player(string name, int beginningBalance)
         {
