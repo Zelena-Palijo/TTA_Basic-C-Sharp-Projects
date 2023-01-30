@@ -35,7 +35,14 @@ namespace TwentyOne
                 player.IsActivelyPlaying = true; //while loop later to keep game going if playing
                 while(player.IsActivelyPlaying && player.Balance > 0)
                 {
-                    game.Play();
+                    try
+                    {
+                        game.Play();
+                    }
+                    catch (Exception)
+                    {
+                        Console.WriteLine("An error occurred. Please contact your system administrator.");
+                    }
                 }
                 game -= player;
                 Console.WriteLine("Thank you for playing!");
