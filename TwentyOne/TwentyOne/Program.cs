@@ -22,7 +22,7 @@ namespace TwentyOne
             {
                 Console.WriteLine("Great! How much money did you bring today?");
                 validAnswer = int.TryParse(Console.ReadLine(), out bank);
-                if (!validAnswer) Console.WriteLine("Please enter digits only.");
+                if (!validAnswer) Console.WriteLine("Please enter digits only, no decimals.");
             }
 
             Console.WriteLine("Hello, {0}. Would you like to join a game of 21 right now?", playerName);
