@@ -72,7 +72,7 @@ namespace NewsletterAppMVC.Controllers
                 }
             }
 
-            return View();
+            return View(signups);
             
         }
     }
