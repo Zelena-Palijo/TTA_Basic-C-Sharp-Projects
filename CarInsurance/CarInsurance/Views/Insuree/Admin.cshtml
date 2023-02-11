@@ -25,20 +25,20 @@
             </div>
         </div>
         <div class="card-body">
-            @foreach(var insuree in Model)
+            @foreach(var quotedetails in Model)
             {
             <div class="row mb-3">
                 <div class="col-3">
-                    @insuree.FirstName
+                    @quotedetails.FirstName
                 </div>
                 <div class="col-3">
-                    @insuree.LastName
+                    @quotedetails.LastName
+                </div>
+                <div class="col-4">
+                    @quotedetails.EmailAddress
                 </div>
                 <div class="col-3">
-                    @insuree.EmailAddress
-                </div>
-                <div class="col-3">
-                    $ @insuree.Quote
+                    $ @quotedetails.Quote
                 </div>
             </div>
             }

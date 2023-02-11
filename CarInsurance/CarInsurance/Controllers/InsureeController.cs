@@ -23,7 +23,7 @@ namespace CarInsurance.Controllers
 
         [HttpPost]
         public ActionResult QuoteDetails(string firstName, string lastName, string emailAddress, DateTime dateOfBirth,
-            int carYear, string carMake, string carModel, bool coverageType, 
+            int carYear, string carMake, string carModel, bool coverageType = false, 
             int speedingTickets = 0, bool duiHistory = false) //obtain details from initial table details
         {
             //calculate car insurance quote
