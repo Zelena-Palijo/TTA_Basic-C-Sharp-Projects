@@ -1,0 +1,49 @@
+﻿@using CarInsurance.Models
+@model List<Insuree>
+
+@{
+    ViewBag.Title = "Admin";
+}
+
+<div class="row-no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+        <div class="card-header text-center">
+            <h2>Car Insurance Quotes</h2>
+        </div>
+        <div class="cad-body">
+            <div class="row mb-3">
+                <p><u>First Name</u></p>
+            </div>
+            <div class="row mb-3">
+                <p><u>Last Name</u></p>
+            </div>
+            <div class="row mb-3">
+                <p><u>Email Address</u></p>
+            </div>
+            <div class="row mb-3">
+                <p><u>Quote</u></p>
+            </div>
+        </div>
+        <div class="card-body">
+            @foreach(var insuree in Model)
+            {
+            <div class="row mb-3">
+                <div class="col-3">
+                    @insuree.FirstName
+                </div>
+                <div class="col-3">
+                    @insuree.LastName
+                </div>
+                <div class="col-3">
+                    @insuree.EmailAddress
+                </div>
+                <div class="col-3">
+                    $ @insuree.Quote
+                </div>
+            </div>
+            }
+        </div>
+
+    </div>
+</div>
+

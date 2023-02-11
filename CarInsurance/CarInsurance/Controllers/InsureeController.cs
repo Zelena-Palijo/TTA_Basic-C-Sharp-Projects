@@ -114,6 +114,14 @@ namespace CarInsurance.Controllers
             }
         }
 
+
+        //ADMIN
+        public ActionResult Admin()
+        {
+            return View();
+        }
+
+
         // GET: Insuree/Details/5
         public ActionResult Details(int? id)
         {
