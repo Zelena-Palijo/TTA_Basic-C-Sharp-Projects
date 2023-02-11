@@ -1,93 +1,48 @@
-﻿@model IEnumerable<CarInsurance.Models.Insuree>
+﻿@using CarInsurance.Models 
+@model QuoteDetail
 
-@{
-    ViewBag.Title = "Index";
-}
-
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.FirstName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.LastName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.EmailAddress)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DateOfBirth)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CarYear)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CarMake)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CarModel)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.DUI)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.SpeedingTickets)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CoverageType)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Quote)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.FirstName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.LastName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.EmailAddress)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DateOfBirth)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CarYear)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CarMake)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CarModel)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DUI)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.SpeedingTickets)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CoverageType)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Quote)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
-            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
-        </td>
-    </tr>
-}
-
-</table>
+<div class="row no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow">
+        <div class="card-header text-left">
+            <h2 class="m-0">Get an insurance quote today</h2>
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("QuoteDetail", "Home", FormMethod.Post))
+            {
+            <div class="row no-gutters">
+                <div class="form-group col-md-12">
+                    <input name="FirstName" type="text" class="form-control" placeholder="First Name" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="LastName" type="text" class="form-control" placeholder="Last Name" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="EmailAddress" type="email" class="form-control" placeholder="Email Address" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="DateOfBirth" type="datetime" class="form-control" placeholder="Date of Birth" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="CarYear" type="number" class="form-control" placeholder="Car Year" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="Car Make" type="text" class="form-control" placeholder="Car Model" />
+                </div>
+                <div class="form-group col-md-12">
+                    <p class="text-left">Have you ever had a DUI?</p>
+                    <input name="DUI" type="checkbox" class="form-control" value="true" />
+                </div>
+                <div class="form-group col-md-12">
+                    <p class="text-left">How many speeding tickets have you had?</p>
+                    <input name="SpeedingTickets" type="number" class="form-control" placeholder="Speeding Ticket Count" />
+                </div>
+                <div class="form-group col-md-12">
+                    <p class="text-left">Do you have full coverage?</p>
+                    <input name="CoverageType" type="checkbox" class="form-control" value="true" />
+                </div>
+                <button type="submit" class="btn btn-primary">Calculate Quote</button>
+            </div>
+            }
+        </div>
+    </div>
+</div>

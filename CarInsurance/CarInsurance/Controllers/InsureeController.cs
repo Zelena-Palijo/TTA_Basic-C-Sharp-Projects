@@ -12,18 +12,19 @@ namespace CarInsurance.Controllers
 {
     public class InsureeController : Controller
     {
-        private InsuranceEntities db = new InsuranceEntities();
+        private readonly InsuranceEntities db = new InsuranceEntities();
+        //private readonly string connectionString = @""
 
         // GET: Insuree
         public ActionResult Index()
         {
-            return View(db.Insurees.ToList());
+            return View();
         }
 
         [HttpPost]
         public ActionResult QuoteDetails(string firstName, string lastName, string emailAddress, DateTime dateOfBirth,
-            int carYear, string carMake, string carModel, bool duiHistory = false, int speedingTickets = 0,
-            bool coverageType) //obtain details from initial table details
+            int carYear, string carMake, string carModel, bool coverageType, 
+            int speedingTickets = 0, bool duiHistory = false) //obtain details from initial table details
         {
             //calculate car insurance quote
             int quote = 50; //Start with base quote of $50/month
@@ -87,6 +88,29 @@ namespace CarInsurance.Controllers
             if (coverageType == true)
             {
                 int price = (int)(quote * 1.5);
+            }
+
+            //show quote info
+            using (InsuranceEntities db = new InsuranceEntities())
+            {
+                var quotedetails = new QuoteDetail();
+                quotedetails.FirstName = firstName;
+                quotedetails.LastName = lastName;
+                quotedetails.EmailAddress = emailAddress;
+                quotedetails.DateOfBirth = dateOfBirth;
+                quotedetails.CarYear = carYear;
+                quotedetails.CarMake = carMake;
+                quotedetails.CarModel = carModel;
+                quotedetails.DUI = duiHistory;
+                quotedetails.SpeedingTickets = speedingTickets;
+                quotedetails.CoverageType = coverageType;
+                quotedetails.Quote = quote;
+
+                //db.QuoteDetail.Add(quotedetails);
+                //db.SaveChanges();
+
+                return View(quotedetails);
+                
             }
         }
 
@@ -193,5 +217,9 @@ namespace CarInsurance.Controllers
             }
             base.Dispose(disposing);
         }
+
+   
     }
+
+    
 }
