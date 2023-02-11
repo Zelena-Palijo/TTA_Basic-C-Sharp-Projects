@@ -22,7 +22,7 @@ namespace CarInsurance.Controllers
 
         [HttpPost]
         public ActionResult QuoteDetails(string firstName, string lastName, string emailAddress, DateTime dateOfBirth,
-            int carYear, string carMake, string carModel, bool duiHistory, int speedingTickets,
+            int carYear, string carMake, string carModel, bool duiHistory = false, int speedingTickets = 0,
             bool coverageType) //obtain details from initial table details
         {
             //calculate car insurance quote
@@ -58,9 +58,36 @@ namespace CarInsurance.Controllers
             {
                 quote += 25;
             }
+            // if car make is porsche add $25
+            if (carMake == "Porsche")
+            {
+                if (carModel == "911 Carrerra")
+                {
+                    quote += 25; // if also 911 carrerra, add additional $25
+                }
+                quote += 25;
+            }
 
+            //quote changes based on speeding tickets
+            //add $10 for each speeding ticket
+            for (int i = 0; i < speedingTickets; i++)
+            {
+                quote += 10;
+            }
 
+            //quote changes based on DUI
+            // if the user ever had a DUI, add 25% to the total
+            if (duiHistory == true)
+            {
+                int price = (int) (quote * 1.25);
+            }
 
+            //quote changes based on coverage
+            // if full coverage add 50% to total
+            if (coverageType == true)
+            {
+                int price = (int)(quote * 1.5);
+            }
         }
 
         // GET: Insuree/Details/5
