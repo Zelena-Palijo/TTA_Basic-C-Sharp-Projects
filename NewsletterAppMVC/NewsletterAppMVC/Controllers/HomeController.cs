@@ -51,7 +51,7 @@ namespace NewsletterAppMVC.Controllers
         
         public ActionResult Admin()
         {
-            string queryString = @"SELECT Id, FirstName, LastName, EmailAddress SocialSecurityNumber from SignUps";
+            string queryString = @"SELECT Id, FirstName, LastName, EmailAddress, SocialSecurityNumber from SignUps";
             List<NewsletterSignUp> signups = new List<NewsletterSignUp>();
 
             using(SqlConnection connection = new SqlConnection(connectionString))
