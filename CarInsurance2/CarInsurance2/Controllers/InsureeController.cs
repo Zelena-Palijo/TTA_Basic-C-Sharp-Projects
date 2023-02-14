@@ -56,7 +56,7 @@ namespace CarInsurance2.Controllers
         {
             if (ModelState.IsValid)
             {
-                int quote = 50; //start with base quote of $50/month
+                decimal quote = 50; //start with base quote of $50/month
                 var today = DateTime.Today; //to calculate age
                 var age = today.Year - insuree.DateOfBirth.Year;
 
@@ -67,7 +67,7 @@ namespace CarInsurance2.Controllers
                     quote += 100;
                 }
                 //if user is 19-25, add $50
-                if (age > 18 && age < 25)
+                if (age > 18 && age <= 25)
                 {
                     quote += 50;
                 }
@@ -109,14 +109,14 @@ namespace CarInsurance2.Controllers
                 //if user ever had DUI then add 25% to the total
                 if (insuree.DUI == true)
                 {
-                    int price = (int)(quote * 1.25); //need to change to decimal?
+                    quote = quote * 1.25m; //need to change to decimal?
                 }
 
                 // quote changes based on coverage
                 // if full coverage add 50% to total
                 if (insuree.CoverageType == true)
                 {
-                    int price = (int)(quote * 1.50);
+                    quote = quote * 1.50m;
                 }
 
                 insuree.Quote = quote;
