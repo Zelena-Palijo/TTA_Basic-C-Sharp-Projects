@@ -21,74 +21,10 @@ namespace CarInsurance2.Controllers
         }
 
         //calculate car insurance quote
-        public decimal QuoteDetails(Insuree insuree)
-        {
-            int quote = 50; //start with base quote of $50/month
-            var today = DateTime.Today; //to calculate age
-            var age = today.Year - insuree.DateOfBirth.Year;
-
-            //quote changes based on AGE
-            //if user is 18 or under, add $100
-            if (age <= 18)
-            {
-                quote += 100;
-            }
-            //if user is 19-25, add $50
-            if (age > 18 && age < 25)
-            {
-                quote += 50;
-            }
-            //if user is 26 or older, add $25
-            if (age > 25)
-            {
-                quote += 25;
-            }
-
-            //quote changes based on CAR DETAILS
-            // IF CAR'S YEAR BEFORE 2000, add $25
-            if (insuree.CarYear < 2000)
-            {
-                quote += 25;
-            }
-            //if car's year is after 2015, add $25
-            if (insuree.CarYear > 2015)
-            {
-                quote += 25;
-            }
-            //if car make is porsche add $25
-            if (insuree.CarMake == "Porsche")
-            {
-                if (insuree.CarModel == "911 Carrerra")
-                {
-                    quote += 25; // if also 911 carrerra, add additional $25
-                }
-                quote += 25;
-            }
-
-            //quote changes based on speeding tickets
-            //add $10 for each speeding ticket
-            for (int i = 0; i < insuree.SpeedingTickets; i++)
-            {
-                quote += 10;
-            }
-
-            //quote changes based on DUI
-            //if user ever had DUI then add 25% to the total
-            if (insuree.DUI == true)
-            {
-                int price = (int)(quote * 1.25); //need to change to decimal?
-            }
-
-            // quote changes based on coverage
-            // if full coverage add 50% to total
-            if (insuree.CoverageType == true)
-            {
-                int price = (int)(quote * 1.50);
-            }
-
-            insuree.Quote = quote;
-            return quote;
-        }
+        //public decimal QuoteDetails(Insuree insuree)
+        //{
+            
+        //}
 
         // GET: Insuree/Details/5
         public ActionResult Details(int? id)
@@ -120,10 +56,75 @@ namespace CarInsurance2.Controllers
         {
             if (ModelState.IsValid)
             {
+                int quote = 50; //start with base quote of $50/month
+                var today = DateTime.Today; //to calculate age
+                var age = today.Year - insuree.DateOfBirth.Year;
+
+                //quote changes based on AGE
+                //if user is 18 or under, add $100
+                if (age <= 18)
+                {
+                    quote += 100;
+                }
+                //if user is 19-25, add $50
+                if (age > 18 && age < 25)
+                {
+                    quote += 50;
+                }
+                //if user is 26 or older, add $25
+                if (age > 25)
+                {
+                    quote += 25;
+                }
+
+                //quote changes based on CAR DETAILS
+                // IF CAR'S YEAR BEFORE 2000, add $25
+                if (insuree.CarYear < 2000)
+                {
+                    quote += 25;
+                }
+                //if car's year is after 2015, add $25
+                if (insuree.CarYear > 2015)
+                {
+                    quote += 25;
+                }
+                //if car make is porsche add $25
+                if (insuree.CarMake == "Porsche")
+                {
+                    if (insuree.CarModel == "911 Carrerra")
+                    {
+                        quote += 25; // if also 911 carrerra, add additional $25
+                    }
+                    quote += 25;
+                }
+
+                //quote changes based on speeding tickets
+                //add $10 for each speeding ticket
+                for (int i = 0; i < insuree.SpeedingTickets; i++)
+                {
+                    quote += 10;
+                }
+
+                //quote changes based on DUI
+                //if user ever had DUI then add 25% to the total
+                if (insuree.DUI == true)
+                {
+                    int price = (int)(quote * 1.25); //need to change to decimal?
+                }
+
+                // quote changes based on coverage
+                // if full coverage add 50% to total
+                if (insuree.CoverageType == true)
+                {
+                    int price = (int)(quote * 1.50);
+                }
+
+                insuree.Quote = quote;
                 
+
                 db.Insurees.Add(insuree);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", quote);
             }
 
             return View(insuree);
