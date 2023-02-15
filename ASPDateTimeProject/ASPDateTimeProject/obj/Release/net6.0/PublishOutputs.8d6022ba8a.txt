@@ -1,0 +1,7 @@
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ASPDateTimeProject\ASPDateTimeProject\obj\Release\net6.0\PubTmp\Out\ASPDateTimeProject.exe
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ASPDateTimeProject\ASPDateTimeProject\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ASPDateTimeProject\ASPDateTimeProject\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ASPDateTimeProject\ASPDateTimeProject\obj\Release\net6.0\PubTmp\Out\ASPDateTimeProject.dll
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ASPDateTimeProject\ASPDateTimeProject\obj\Release\net6.0\PubTmp\Out\ASPDateTimeProject.deps.json
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ASPDateTimeProject\ASPDateTimeProject\obj\Release\net6.0\PubTmp\Out\ASPDateTimeProject.runtimeconfig.json
+C:\Users\Owner\Desktop\Basic_C#_Programs\TTA_Basic-C-Sharp-Projects\ASPDateTimeProject\ASPDateTimeProject\obj\Release\net6.0\PubTmp\Out\ASPDateTimeProject.pdb
