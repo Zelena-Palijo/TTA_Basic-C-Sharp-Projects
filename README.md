@@ -3,7 +3,7 @@
 
 C#/.NET lessons, tutorials, and projects in Microsoft Visual Studio.
 
-####Notable Assignments:
+Notable Assignments:
 
 [Package Express Assignment](https://github.com/Zelena-Palijo/TTA_Basic-C-Sharp-Projects/tree/main/PackageExpress)
 A console app that calculates shipping price based on package dimensions and weight.
