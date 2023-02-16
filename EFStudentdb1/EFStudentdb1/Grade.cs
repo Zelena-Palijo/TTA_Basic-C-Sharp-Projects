@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EFStudentdb1
 {
-    internal class Grade
+    public class Grade
     {
         public int GradeId { get; set; }
         public string GradeName { get; set; }
